@@ -1,0 +1,36 @@
+.container{
+	box-sizing: border-box;
+	width: 1200px;
+	height: 700px;
+	margin: 65px auto;
+}
+.header{
+	background : linear-gradient(to bottom right, red, yellow);
+	padding: 2%;
+	text-align: center;
+	text-shadow: 2px 2px white;
+}
+.gallery {
+    margin: 50px 50px 50px 50px;
+    padding: 10px 30px 10px 50px;
+    border: 2px solid #ccc;
+    float: left;
+    width: 100px;
+}
+
+.gallery:hover {
+    border: 3px solid #a65858;
+}
+
+.gallery img {
+    width:50%;
+    height: 50%;
+}
+
+.desc {
+    padding: 13px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    background: linear-gradient(to bottom right, lightblue, green)
+}
