@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
+	<title>Bayar</title>
 	<link rel="stylesheet" type="text/css" href="css/bayar.css">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 </head>
@@ -12,7 +12,7 @@
 		</div>
 		<div class="content">
 			<div class="mdl">
-				<form action="" method="">
+				<form action="Pembayaran.php" method="">
 						<br>
 							<table>
 								<tr>
@@ -27,20 +27,7 @@
 							</table>
 							<button type="submit" name="submit" class="button">Cek</button>
 				</form>
-				<input type="checkbox" id="konf" name="yes" value="yes" style="margin-top: 3%">
-  				<label for="yes"> Anda sudah yakin ?</label><br>
-  				<br>
-  				<table class="but">
-					<tr>
-						<td>
-							<button type="back" name="back" class="button">Kembali</button>
-						</td>
-						<td>
-							<button type="bayar" name="bayar" class="button">Bayar</button>
-						</td>
-					
-					</tr>
-					</table>
+				
 			</div>
 		</div>
 	</div>	
