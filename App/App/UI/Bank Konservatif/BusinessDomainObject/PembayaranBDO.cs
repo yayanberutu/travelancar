@@ -13,5 +13,11 @@ namespace BusinessDomainObject
         public DateTime waktu_bayar { get; set; }
         public double nominal { get; set; }
         public int status_bayar { get; set; }
+
+        public PembayaranBDO Bayar(string invoiceNumber)
+        {
+            PembayaranBDO pembayaran = null;
+            return pembayaran;
+        }
     }
 }
