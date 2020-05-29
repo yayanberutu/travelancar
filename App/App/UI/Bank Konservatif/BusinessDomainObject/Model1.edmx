@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="BankKonservatifModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="BankKonservatifModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="nasabah">
           <Key>
             <PropertyRef Name="no_rekening" />
@@ -14,6 +14,7 @@
           <Property Name="alamat" Type="varchar" MaxLength="50" />
           <Property Name="no_ktp" Type="varchar" MaxLength="50" />
           <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="saldo" Type="float" />
         </EntityType>
         <EntityType Name="Pembayaran">
           <Key>
@@ -46,8 +47,7 @@
             <End Role="Pembayaran" EntitySet="Pembayaran" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="BankKonservatifModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -61,6 +61,7 @@
           <Property Name="no_ktp" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="Pembayarans" Relationship="Self.FK_Pembayaran_nasabah" FromRole="nasabah" ToRole="Pembayaran" />
+          <Property Name="saldo" Type="Double" />
         </EntityType>
         <EntityType Name="Pembayaran">
           <Key>
@@ -103,6 +104,7 @@
           <EntitySetMapping Name="nasabahs">
             <EntityTypeMapping TypeName="BankKonservatifModel.nasabah">
               <MappingFragment StoreEntitySet="nasabah">
+                <ScalarProperty Name="saldo" ColumnName="saldo" />
                 <ScalarProperty Name="no_rekening" ColumnName="no_rekening" />
                 <ScalarProperty Name="nama" ColumnName="nama" />
                 <ScalarProperty Name="alamat" ColumnName="alamat" />
