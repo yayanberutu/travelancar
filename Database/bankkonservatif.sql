@@ -1,51 +1,111 @@
-/*
-SQLyog Ultimate v8.55 
-MySQL - 5.5.5-10.1.31-MariaDB : Database - bankkonservatif
-*********************************************************************
-*/
-
-/*!40101 SET NAMES utf8 */;
-
-/*!40101 SET SQL_MODE=''*/;
-
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`bankkonservatif` /*!40100 DEFAULT CHARACTER SET latin1 */;
-
-USE `bankkonservatif`;
-
-/*Table structure for table `tnasabah` */
-
-DROP TABLE IF EXISTS `tnasabah`;
-
-CREATE TABLE `tnasabah` (
-  `no_rek` char(11) NOT NULL,
-  `username` char(50) NOT NULL,
-  `password` char(50) NOT NULL,
-  `saldo` double DEFAULT NULL,
-  PRIMARY KEY (`no_rek`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-/*Data for the table `tnasabah` */
-
-/*Table structure for table `ttransaksi` */
-
-DROP TABLE IF EXISTS `ttransaksi`;
-
-CREATE TABLE `ttransaksi` (
-  `id` char(11) NOT NULL,
-  `no_rek` char(11) DEFAULT NULL,
-  `tagihan` double DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `FK_transaksi` (`no_rek`),
-  CONSTRAINT `FK_transaksi` FOREIGN KEY (`no_rek`) REFERENCES `tnasabah` (`no_rek`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-/*Data for the table `ttransaksi` */
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+USE [master]
+GO
+
+/****** Object:  Database [BankKonservatif]    Script Date: 30/05/2020 01:55:34 ******/
+CREATE DATABASE [BankKonservatif]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'BankKonservatif', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\BankKonservatif.mdf' , SIZE = 4096KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
+ LOG ON 
+( NAME = N'BankKonservatif_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\BankKonservatif_log.ldf' , SIZE = 1024KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
+GO
+
+ALTER DATABASE [BankKonservatif] SET COMPATIBILITY_LEVEL = 120
+GO
+
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [BankKonservatif].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+
+ALTER DATABASE [BankKonservatif] SET ANSI_NULL_DEFAULT OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET ANSI_NULLS OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET ANSI_PADDING OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET ANSI_WARNINGS OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET ARITHABORT OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET AUTO_CLOSE OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET AUTO_SHRINK OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET AUTO_UPDATE_STATISTICS ON 
+GO
+
+ALTER DATABASE [BankKonservatif] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET CURSOR_DEFAULT  GLOBAL 
+GO
+
+ALTER DATABASE [BankKonservatif] SET CONCAT_NULL_YIELDS_NULL OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET NUMERIC_ROUNDABORT OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET QUOTED_IDENTIFIER OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET RECURSIVE_TRIGGERS OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET  DISABLE_BROKER 
+GO
+
+ALTER DATABASE [BankKonservatif] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET TRUSTWORTHY OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET PARAMETERIZATION SIMPLE 
+GO
+
+ALTER DATABASE [BankKonservatif] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET HONOR_BROKER_PRIORITY OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET RECOVERY FULL 
+GO
+
+ALTER DATABASE [BankKonservatif] SET  MULTI_USER 
+GO
+
+ALTER DATABASE [BankKonservatif] SET PAGE_VERIFY CHECKSUM  
+GO
+
+ALTER DATABASE [BankKonservatif] SET DB_CHAINING OFF 
+GO
+
+ALTER DATABASE [BankKonservatif] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+GO
+
+ALTER DATABASE [BankKonservatif] SET TARGET_RECOVERY_TIME = 0 SECONDS 
+GO
+
+ALTER DATABASE [BankKonservatif] SET DELAYED_DURABILITY = DISABLED 
+GO
+
+ALTER DATABASE [BankKonservatif] SET  READ_WRITE 
+GO
+
