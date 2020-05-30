@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="puyuh_airModelStoreContainer" CdmEntityContainer="puyuh_airEntities">
+    <EntitySetMapping Name="penerbangan">
+      <EntityTypeMapping TypeName="puyuh_airModel.penerbangan">
+        <MappingFragment StoreEntitySet="penerbangan">
+          <ScalarProperty Name="id_penerbangan" ColumnName="id_penerbangan" />
+          <ScalarProperty Name="nama_maskapai" ColumnName="nama_maskapai" />
+          <ScalarProperty Name="kota_asal" ColumnName="kota_asal" />
+          <ScalarProperty Name="kota_tujuan" ColumnName="kota_tujuan" />
+          <ScalarProperty Name="tanggal_keberangkatan" ColumnName="tanggal_keberangkatan" />
+          <ScalarProperty Name="jam_keberangkatan" ColumnName="jam_keberangkatan" />
+          <ScalarProperty Name="harga" ColumnName="harga" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="penumpang">
+      <EntityTypeMapping TypeName="puyuh_airModel.penumpang">
+        <MappingFragment StoreEntitySet="penumpang">
+          <ScalarProperty Name="id_penumpang" ColumnName="id_penumpang" />
+          <ScalarProperty Name="id_tiket" ColumnName="id_tiket" />
+          <ScalarProperty Name="nama" ColumnName="nama" />
+          <ScalarProperty Name="nomor_identitas" ColumnName="nomor_identitas" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tiket">
+      <EntityTypeMapping TypeName="puyuh_airModel.tiket">
+        <MappingFragment StoreEntitySet="tiket">
+          <ScalarProperty Name="id_tiket" ColumnName="id_tiket" />
+          <ScalarProperty Name="id_penerbangan" ColumnName="id_penerbangan" />
+          <ScalarProperty Name="kode_booking" ColumnName="kode_booking" />
+          <ScalarProperty Name="waktu_booking" ColumnName="waktu_booking" />
+          <ScalarProperty Name="batas_waktu_bayar_atm" ColumnName="batas_waktu_bayar_atm" />
+          <ScalarProperty Name="batas_waktu_bayar_internet_banking" ColumnName="batas_waktu_bayar_internet_banking" />
+          <ScalarProperty Name="kode_bayar" ColumnName="kode_bayar" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="total_harga" ColumnName="total_harga" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

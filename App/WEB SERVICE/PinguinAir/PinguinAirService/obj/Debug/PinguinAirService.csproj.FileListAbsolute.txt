@@ -1,0 +1,16 @@
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAirService.dll.config
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAirService.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAirService.pdb
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\EntityFramework.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\EntityFramework.SqlServer.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAir.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAirLogic.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAirLogic.pdb
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAir.pdb
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAir.dll.config
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\EntityFramework.xml
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\EntityFramework.SqlServer.xml
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\obj\Debug\PinguinAirService.csprojAssemblyReference.cache
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\obj\Debug\PinguinAirService.csproj.CopyComplete
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\obj\Debug\PinguinAirService.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\obj\Debug\PinguinAirService.pdb

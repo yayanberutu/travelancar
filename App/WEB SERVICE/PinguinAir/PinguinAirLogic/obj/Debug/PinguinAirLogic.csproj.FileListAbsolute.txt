@@ -1,0 +1,11 @@
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirLogic\bin\Debug\PinguinAirLogic.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirLogic\bin\Debug\PinguinAirLogic.pdb
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirLogic\bin\Debug\PinguinAir.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirLogic\bin\Debug\EntityFramework.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirLogic\bin\Debug\PinguinAir.pdb
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirLogic\bin\Debug\PinguinAir.dll.config
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirLogic\bin\Debug\EntityFramework.xml
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirLogic\obj\Debug\PinguinAirLogic.csprojAssemblyReference.cache
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirLogic\obj\Debug\PinguinAirLogic.csproj.CopyComplete
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirLogic\obj\Debug\PinguinAirLogic.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirLogic\obj\Debug\PinguinAirLogic.pdb

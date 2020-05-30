@@ -1,96 +1,32 @@
---
--- Database: `itik_air`
---
+create database itik_air
 
--- --------------------------------------------------------
-
---
--- Table structure for table `bangku`
---
-
-CREATE TABLE bangku (
-  seat_no varchar(5) NOT NULL,
-  no_pesawat varchar(15) NOT NULL
-);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `penerbangan`
---
 
 CREATE TABLE penerbangan (
-  no_pesawat varchar(15) NOT NULL,
-  bandara_asal varchar(30) NOT NULL,
-  bandara_tujuan varchar(30) NOT NULL,
-  tgl_berangkat date NOT NULL,
-  tgl_tiba date NOT NULL,
-  jam_berangkat time NOT NULL,
-  jam_tiba time NOT NULL
-) ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `penumpang`
---
-
-CREATE TABLE penumpang (
-  no_ktp int NOT NULL,
-  nama_penumpang varchar(50) NOT NULL,
-  umur_penumpang int NOT NULL,
-  jk_penumpang varchar(50) NOT NULL,
-  alamat_penumpang varchar(50) NOT NULL
-) ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tiket`
---
+  id_penerbangan INT PRIMARY KEY NOT NULL
+, nama_maskapai NVARCHAR(250) NOT NULL
+, kota_asal NVARCHAR(250) NOT NULL
+, kota_tujuan NVARCHAR(250) NOT NULL
+, tanggal_keberangkatan DATETIME NOT NULL
+, jam_keberangkatan NVARCHAR(16) NOT NULL
+, harga INT NOT NULL
+);
 
 CREATE TABLE tiket (
-  no_tiket int NOT NULL,
-  no_ktp int NOT NULL,
-  no_pesawat varchar(15) NOT NULL
-) ;
+  id_tiket INT PRIMARY KEY NOT NULL
+, id_penerbangan INT NOT NULL
+, kode_booking NVARCHAR(250) NOT NULL
+, waktu_booking DATETIME NULL
+, batas_waktu_bayar_atm DATETIME NULL
+, batas_waktu_bayar_internet_banking DATETIME NULL
+, kode_bayar NVARCHAR(250) NULL
+, STATUS NVARCHAR(50) NULL
+, user_id INT NULL
+, total_harga BIGINT NULL
+);
 
-
---
--- Indexes for table `penerbangan`
---
-ALTER TABLE penerbangan
-  ADD PRIMARY KEY (no_pesawat);
-
---
--- Indexes for table `penumpang`
---
-ALTER TABLE penumpang
-  ADD PRIMARY KEY (no_ktp);
-
- ALTER TABLE bangku
-  ADD PRIMARY KEY (seat_no);
-
-ALTER TABLE tiket
-  ADD PRIMARY KEY (no_tiket);
-
-
-
---
--- Constraints for table `bangku`
---
-ALTER TABLE bangku
-  ADD CONSTRAINT FK_No_Pesawat FOREIGN KEY (no_pesawat) REFERENCES penerbangan (no_pesawat);
-
---
--- Constraints for table `tiket`
---
-ALTER TABLE tiket
-  ADD CONSTRAINT FK_No_KTP FOREIGN KEY (no_ktp) REFERENCES penumpang (no_ktp)
-ALTER TABLE tiket
-  ADD CONSTRAINT FK_No_Penerbangan FOREIGN KEY (no_pesawat) REFERENCES penerbangan (no_pesawat);
-
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+CREATE TABLE penumpang (
+  id_penumpang INT PRIMARY KEY NOT NULL
+, id_tiket INT NOT NULL
+, nama NVARCHAR(250) NOT NULL
+, nomor_identitas NVARCHAR(250) NOT NULL
+);

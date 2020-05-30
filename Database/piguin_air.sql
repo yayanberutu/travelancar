@@ -1,34 +1,31 @@
 CREATE DATABASE pingiun_air;
-CREATE TABLE bangku (
-  seat_no VARCHAR(5) NOT NULL PRIMARY KEY,
-  no_pesawat VARCHAR(15) NOT NULL
-);
+
 CREATE TABLE penerbangan (
-  no_pesawat VARCHAR(15) NOT NULL PRIMARY KEY,
-  bandara_asal VARCHAR(30) NOT NULL,
-  bandara_tujuan VARCHAR(30) NOT NULL,
-  tgl_berangkat DATE NOT NULL,
-  tgl_tiba DATE NOT NULL,
-  jam_berangkat TIME NOT NULL,
-  jam_tiba TIME NOT NULL
+  id_penerbangan INT PRIMARY KEY NOT NULL
+, nama_maskapai NVARCHAR(250) NOT NULL
+, kota_asal NVARCHAR(250) NOT NULL
+, kota_tujuan NVARCHAR(250) NOT NULL
+, tanggal_keberangkatan DATETIME NOT NULL
+, jam_keberangkatan NVARCHAR(16) NOT NULL
+, harga INT NOT NULL
 );
-CREATE TABLE penumpang (
-  no_ktp INT NOT NULL PRIMARY KEY,
-  nama_penumpang VARCHAR(50) NOT NULL,
-  umur_penumpang INT NOT NULL,
-  jk_penumpang VARCHAR(50) NOT NULL,
-  alamat_penumpang VARCHAR(50) NOT NULL
-);
+
 CREATE TABLE tiket (
-  no_tiket INT NOT NULL PRIMARY KEY,
-  no_ktp INT NOT NULL,
-  no_pesawat VARCHAR(15) NOT NULL
+  id_tiket INT PRIMARY KEY NOT NULL
+, id_penerbangan INT NOT NULL
+, kode_booking NVARCHAR(250) NOT NULL
+, waktu_booking DATETIME NULL
+, batas_waktu_bayar_atm DATETIME NULL
+, batas_waktu_bayar_internet_banking DATETIME NULL
+, kode_bayar NVARCHAR(250) NULL
+, STATUS NVARCHAR(50) NULL
+, user_id INT NULL
+, total_harga BIGINT NULL
 );
 
-ALTER TABLE bangku
-  ADD CONSTRAINT FK_No_Pesawat FOREIGN KEY (no_pesawat) REFERENCES penerbangan (no_pesawat);
-ALTER TABLE tiket
-  ADD CONSTRAINT FK_No_KTP FOREIGN KEY (no_ktp) REFERENCES penumpang (no_ktp);
-ALTER TABLE tiket
-  ADD CONSTRAINT FK_No_Penerbangan FOREIGN KEY (no_pesawat) REFERENCES penerbangan (no_pesawat);
-
+CREATE TABLE penumpang (
+  id_penumpang INT PRIMARY KEY NOT NULL
+, id_tiket INT NOT NULL
+, nama NVARCHAR(250) NOT NULL
+, nomor_identitas NVARCHAR(250) NOT NULL
+);

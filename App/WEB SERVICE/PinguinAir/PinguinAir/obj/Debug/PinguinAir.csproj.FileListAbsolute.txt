@@ -1,0 +1,11 @@
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAir\bin\Debug\PinguinAir.dll.config
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAir\bin\Debug\PinguinAir.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAir\bin\Debug\PinguinAir.pdb
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAir\bin\Debug\EntityFramework.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAir\bin\Debug\EntityFramework.SqlServer.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAir\bin\Debug\EntityFramework.xml
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAir\bin\Debug\EntityFramework.SqlServer.xml
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAir\obj\Debug\PinguinAir.csprojAssemblyReference.cache
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAir\obj\Debug\PinguinAir.csproj.CopyComplete
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAir\obj\Debug\PinguinAir.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAir\obj\Debug\PinguinAir.pdb
