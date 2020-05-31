@@ -26,7 +26,10 @@ namespace PinguinAirService
             {
                 string msg = e.Message;
                 string reason = "GetProduct Exception";
+<<<<<<< HEAD
                 //throw new FaultException<ProductFault>(new ProductFault(msg), reason);
+=======
+>>>>>>> 55665f3b14674528ebaef40274f37dad7f8c1f03
             }
             if (productBDO == null)
             {
@@ -34,7 +37,10 @@ namespace PinguinAirService
                 string.Format("No product found for id {0}",
                 id);
                 string reason = "GetProduct Empty Product";
+<<<<<<< HEAD
                // throw new FaultException<ProductFault>(new ProductFault(msg), reason);
+=======
+>>>>>>> 55665f3b14674528ebaef40274f37dad7f8c1f03
             }
             PinguinAirBDO flight = new PinguinAirBDO();
             TranslateProductBDOToProductDTO(productBDO, flight);
@@ -52,7 +58,5 @@ namespace PinguinAirService
             flight.harga = productBDO.harga;
         }
       
-
-
     }
 }

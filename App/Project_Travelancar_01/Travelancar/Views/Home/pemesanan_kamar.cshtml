@@ -1,0 +1,122 @@
+@model namaproyek.Models.pemesanan_kmr
+
+@{
+    ViewBag.Title = "Pemesanana Kamar";
+}
+
+@{
+    List<SelectListItem> listTujuan = new List<SelectListItem>();
+    listTujuan.Add(new SelectListItem
+    {
+        Text = "MEDAN",
+        Value = "Medan",
+        Selected = true
+    });
+    listTujuan.Add(new SelectListItem
+    {
+        Text = "JAKARTA",
+        Value = "Jakarta"
+    });
+    listTujuan.Add(new SelectListItem
+    {
+        Text = "SURABAYA",
+        Value = "Surabaya"
+    });
+    listTujuan.Add(new SelectListItem
+    {
+        Text = "BALI",
+        Value = "Bali"
+    });
+    listTujuan.Add(new SelectListItem
+    {
+        Text = "YOGYAKARTA",
+        Value = "Yogyakarta"
+    });
+}
+
+@{
+    List<SelectListItem> listTamu = new List<SelectListItem>();
+    listTamu.Add(new SelectListItem
+    {
+        Text = "1 Orang",
+        Value = "1",
+        Selected = true
+    });
+    listTamu.Add(new SelectListItem
+    {
+        Text = "2 Orang",
+        Value = "2"
+    });
+    listTamu.Add(new SelectListItem
+    {
+        Text = "3 Orang",
+        Value = "3"
+    });
+    listTamu.Add(new SelectListItem
+    {
+        Text = "4 Orang",
+        Value = "4"
+    });
+}
+@{
+    List<SelectListItem> listDurasi = new List<SelectListItem>();
+    listDurasi.Add(new SelectListItem
+    {
+        Text = "1 Malam",
+        Value = "1",
+        Selected = true
+    });
+    listDurasi.Add(new SelectListItem
+    {
+        Text = "2 Malam",
+        Value = "2"
+    });
+    listDurasi.Add(new SelectListItem
+    {
+        Text = "3 Malam",
+        Value = "3"
+    });
+    listDurasi.Add(new SelectListItem
+    {
+        Text = "4 Malam",
+        Value = "4"
+    });
+}
+<h3>Form Pencarian Kamar Hotel:</h3>
+
+@using (Html.BeginForm())
+{
+
+    <fieldset>
+        <legend>Cari Kamar</legend>
+        <div>
+            <strong><h5>Kota Tujuan :</h5></strong>
+        </div>
+        <div>
+            @Html.DropDownListFor(model => model.kotaTujuan, listTujuan, "--Pilih Kota Tujuan---")
+        </div>
+        <div>
+            <strong><h5>Tanggal Keberangkatan :</h5></strong>
+        </div>
+        <div>
+            @Html.EditorFor(model => model.tanggalBerangkat)
+        </div>
+
+        <div>
+            <strong><h5>Jumlah Tamu :</h5></strong>
+        </div>
+        <div>
+            @Html.DropDownListFor(model => model.jumlahTamu, listTamu, "--Jumlah Tamu---")
+        </div>
+        <div>
+            <strong><h5>Durasi :</h5></strong>
+        </div>
+        <div>
+            @Html.DropDownListFor(model => model.durasi, listDurasi, "--Jumlah durasi---")
+        </div>
+
+        <p>
+            <input type="submit" value="Cari Kamar" />
+        </p>
+    </fieldset>
+}
