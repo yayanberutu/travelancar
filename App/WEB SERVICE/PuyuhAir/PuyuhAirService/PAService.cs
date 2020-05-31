@@ -26,7 +26,7 @@ namespace PuyuhAirService
             {
                 string msg = e.Message;
                 string reason = "GetProduct Exception";
-                throw new FaultException<ProductFault>(new ProductFault(msg), reason);
+               
             }
             if (productBDO == null)
             {
@@ -34,7 +34,7 @@ namespace PuyuhAirService
                 string.Format("No product found for id {0}",
                 id);
                 string reason = "GetProduct Empty Product";
-                throw new FaultException<ProductFault>(new ProductFault(msg), reason);
+                
             }
             PuyuhAirBDO flight = new PuyuhAirBDO();
             TranslateProductBDOToProductDTO(productBDO, flight);

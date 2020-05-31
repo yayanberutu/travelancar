@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewBag.Title = "Booking";
+
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#flip").click(function () {
+            $("#panel").slideToggle("slow");
+        });
+    });
+
+
+    $(document).ready(function () {
+        $("#flop").click(function () {
+            $("#panol").slideToggle("slow");
+        });
+    });
+</script>
+<style>
+    #flip {
+        padding: 5px;
+        border: solid 1px #B0DFE5;
+    }
+
+    #flop {
+        padding: 5px;
+        border: solid 1px #B0DFE5;
+    }
+
+    #panol {
+        padding: 5px;
+        display: none;
+        background-color: #B0DFE5;
+    }
+
+    #panel {
+        padding: 5px;
+        display: none;
+        background-color: #B0DFE5;
+    }
+</style>
+
+<h2>Pembayaran</h2>
+
+@using (Html.BeginForm())
+{
+
+<table class="table">
+    <tr>
+        <td>Nama Maskapai</td>
+        <td>Garuda(dummy)</td>
+    </tr>
+    <tr>
+        <td>Kota Asal</td>
+        <td>Medan(dummy)</td>
+    </tr>
+    <tr>
+        <td>Kota Tujuan</td>
+        <td>Papua(dummy)</td>
+    </tr>
+    <tr>
+        <td>Tanggal Penerbangan</td>
+        <td>1 Jun 2020</td>
+    </tr>
+
+    <tr>
+        <td>Jumlah Penumpang</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>Harga Total</td>
+        <td>Rp.2.000.000(dummy)</td>
+    </tr>
+    <input type="submit" value="Pesan" class="btn btn-default" />
+</table>
+}
+
+
