@@ -26,7 +26,7 @@ namespace PinguinAirService
             {
                 string msg = e.Message;
                 string reason = "GetProduct Exception";
-                throw new FaultException<ProductFault>(new ProductFault(msg), reason);
+                //throw new FaultException<ProductFault>(new ProductFault(msg), reason);
             }
             if (productBDO == null)
             {
@@ -34,7 +34,7 @@ namespace PinguinAirService
                 string.Format("No product found for id {0}",
                 id);
                 string reason = "GetProduct Empty Product";
-                throw new FaultException<ProductFault>(new ProductFault(msg), reason);
+               // throw new FaultException<ProductFault>(new ProductFault(msg), reason);
             }
             PinguinAirBDO flight = new PinguinAirBDO();
             TranslateProductBDOToProductDTO(productBDO, flight);
