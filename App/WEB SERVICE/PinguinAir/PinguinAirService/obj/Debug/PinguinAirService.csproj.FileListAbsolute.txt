@@ -14,6 +14,25 @@ D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\obj\Deb
 D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\obj\Debug\PinguinAirService.csproj.CopyComplete
 D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\obj\Debug\PinguinAirService.dll
 D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAirService\obj\Debug\PinguinAirService.pdb
+<<<<<<< HEAD
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAirService.dll.config
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAirService.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAirService.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\EntityFramework.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\EntityFramework.SqlServer.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAir.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAirLogic.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAirLogic.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAir.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAir.dll.config
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\EntityFramework.xml
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\EntityFramework.SqlServer.xml
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAirService\obj\Debug\PinguinAirService.csprojAssemblyReference.cache
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAirService\obj\Debug\PinguinAirService.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAirService\obj\Debug\PinguinAirService.csproj.CopyComplete
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAirService\obj\Debug\PinguinAirService.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAirService\obj\Debug\PinguinAirService.pdb
+=======
 C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAirService.dll.config
 C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAirService.dll
 C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAirService\bin\Debug\PinguinAirService.pdb
@@ -30,3 +49,4 @@ C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAirService\obj\Debug\
 C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAirService\obj\Debug\PinguinAirService.csproj.CopyComplete
 C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAirService\obj\Debug\PinguinAirService.dll
 C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAirService\obj\Debug\PinguinAirService.pdb
+>>>>>>> 55665f3b14674528ebaef40274f37dad7f8c1f03

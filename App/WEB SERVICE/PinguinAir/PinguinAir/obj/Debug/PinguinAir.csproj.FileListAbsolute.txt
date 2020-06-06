@@ -9,3 +9,15 @@ D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAir\obj\Debug\Ping
 D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAir\obj\Debug\PinguinAir.csproj.CopyComplete
 D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAir\obj\Debug\PinguinAir.dll
 D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\PinguinAir\PinguinAir\obj\Debug\PinguinAir.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAir\bin\Debug\PinguinAir.dll.config
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAir\bin\Debug\PinguinAir.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAir\bin\Debug\PinguinAir.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAir\bin\Debug\EntityFramework.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAir\bin\Debug\EntityFramework.SqlServer.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAir\bin\Debug\EntityFramework.xml
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAir\bin\Debug\EntityFramework.SqlServer.xml
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAir\obj\Debug\PinguinAir.csprojAssemblyReference.cache
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAir\obj\Debug\PinguinAir.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAir\obj\Debug\PinguinAir.csproj.CopyComplete
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAir\obj\Debug\PinguinAir.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\PinguinAir\PinguinAir\obj\Debug\PinguinAir.pdb
