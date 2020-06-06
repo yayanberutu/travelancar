@@ -12,7 +12,7 @@
 		</div>
 		<div class="content">
 			<div class="mdl">
-				<form action="Pembayaran.php" method="">
+				<form action="Pembayaran.php" method="get">
 						<br>
 							<table>
 								<tr>
@@ -21,8 +21,17 @@
 									</td>
 									<td>:</td>
 									<td>
-										<input type="text" name="username" class="ktk_lgn">
+										<input type="text" name="nomor" class="ktk_lgn">
 									</td>
+								</tr>
+								<tr>
+									<?php
+											if(isset($_GET['pesan'])){
+												if($_GET['pesan'] == "gagal"){
+													echo "Nomor yang anda masukkan salah!!!";
+											}
+										} 
+									?>
 								</tr>
 							</table>
 							<button type="submit" name="submit" class="button">Cek</button>

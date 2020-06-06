@@ -6,9 +6,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Short+Stack&display=swap" rel="stylesheet">
 </head>
 <body style="background: url('image/bgs.jpg');">
+	<?php 
+	session_start();
+	if($_SESSION['status']!="login"){
+		header("location:login.php?pesan=belum_login");
+	}
+	?>
 	<div class="container">
 			<div class="header">
 			<h2 style="font-family: 'Short Stack' , cursive ; font-size: 50px;">Selamat Datang di Bank Bung!</h2>
+			<a href="logout.php">LOGOUT</a>
 		</div>
 		<div class="content1" style="background-image :url('image/atk.jpg');">
 			<div class="gallery">

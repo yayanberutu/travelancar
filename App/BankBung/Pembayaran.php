@@ -22,19 +22,27 @@
 
 				<?php
 					include "connect.php";
-					$view = $connectdb-> query("SELECT * FROM transaksi ORDER BY id_transaksi");
-					while ($row = $view->fetch_array() )
-							{
-				?>
-						<tr style="font-size: 18px;">
-							<td>
-								<?php echo $row['id_transaksi'];?>
-							</td>
-							<td>
-								<?php echo $row['tagihan'];?>
-							</td>
-						</tr>
-						<?php
+					if(isset($_GET['nomor'])){
+						$nomor = $_GET['nomor'];
+						$data = $connectdb-> query("select * from transaksi where id_transaksi like  '".$nomor."'");
+					// $view = $connectdb-> query("SELECT * FROM transaksi ORDER BY id_transaksi");
+					while ($row = $data->fetch_array() )
+					 		{
+						?>
+							<tr style="font-size: 18px;">
+								<td>
+									<?php echo $row['id_transaksi'];?>
+								</td>
+								<td>
+									<?php echo $row['tagihan'];?>
+								</td>
+							</tr>
+							<?php
+									}
+									$cek = mysqli_num_rows($data);
+									if($cek < 1){
+										header("location:bayar.php?pesan=gagal");
+										}
 								}
 						?>
 				</table>
