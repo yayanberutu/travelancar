@@ -9,16 +9,17 @@ using System.Text;
 
 namespace PuyuhAirService
 {
-    [ServiceContract]
     public interface IPAService
     {
         [OperationContract]
         [FaultContract(typeof(ProductFault))]
-        PuyuhAirBDO GetProduct(int id);
+        Product GetProduct(int id);
+
+
     }
 
     [DataContract]
-    public class PuyuhAirBDO
+    public class Product
     {
         [DataMember]
         public int id_penerbangan { get; set; }
@@ -41,10 +42,6 @@ namespace PuyuhAirService
         [DataMember]
         public int harga { get; set; }
 
-        public static implicit operator PuyuhAirBDO(PuyuhAir.PuyuhAirBDO v)
-        {
-            throw new NotImplementedException();
-        }
     }
 
 

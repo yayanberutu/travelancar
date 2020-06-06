@@ -12,36 +12,21 @@ namespace PuyuhAirService
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
     public class PAService : IPAService
     {
-        PALogic palogic = new PALogic();
+        private const string Reason = "GetProduct Exception";
+        PALogic productLogic = new PALogic();
 
-        public PuyuhAirBDO GetProduct(int id)
+        public Product GetProduct(int id)
         {
             PuyuhAirBDO productBDO = null;
-            try
-            {
-                PuyuhAir.PuyuhAirBDO puyuhAirBDO = palogic.GetProduct(id);
-                productBDO = puyuhAirBDO;
-            }
-            catch (Exception e)
-            {
-                string msg = e.Message;
-                string reason = "GetProduct Exception";
-               
-            }
-            if (productBDO == null)
-            {
-                string msg =
-                string.Format("No product found for id {0}",
-                id);
-                string reason = "GetProduct Empty Product";
-                
-            }
-            PuyuhAirBDO flight = new PuyuhAirBDO();
-            TranslateProductBDOToProductDTO(productBDO, flight);
-            return flight;
+
+            productBDO = productLogic.GetProduct(id);
+
+            Product product = new Product();
+            TranslateProductBDOToProductDTO(productBDO, product);
+            return product;
 
         }
-        private void TranslateProductBDOToProductDTO(PuyuhAirBDO productBDO, PuyuhAirBDO flight)
+        private void TranslateProductBDOToProductDTO(PuyuhAirBDO productBDO, Product flight)
         {
             flight.id_penerbangan = productBDO.id_penerbangan;
             flight.nama_maskapai = productBDO.nama_maskapai;
@@ -51,7 +36,6 @@ namespace PuyuhAirService
             flight.jam_keberangkatan = productBDO.jam_keberangkatan;
             flight.harga = productBDO.harga;
         }
-
     }
-
+    
 }

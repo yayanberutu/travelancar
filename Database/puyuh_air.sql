@@ -29,3 +29,6 @@ CREATE TABLE penumpang (
 , nama NVARCHAR(250) NOT NULL
 , nomor_identitas NVARCHAR(250) NOT NULL
 );
+
+ALTER TABLE tiket
+  ADD CONSTRAINT FK_id_Penerbangan FOREIGN KEY (id_penerbangan) REFERENCES penerbangan (id_penerbangan);
