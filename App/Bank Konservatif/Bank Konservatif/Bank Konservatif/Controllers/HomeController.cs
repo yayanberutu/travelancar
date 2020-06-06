@@ -12,7 +12,17 @@ namespace Bank_Konservatif.Controllers
         {
             return View();
         }
+        public ActionResult Saldo()
+        {
+            ViewBag.Saldo = Session["saldo"];
+            return View();
+        }
 
+        [HttpGet]
+        public ActionResult Pembayaran()
+        {
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -26,5 +36,6 @@ namespace Bank_Konservatif.Controllers
 
             return View();
         }
+
     }
 }
