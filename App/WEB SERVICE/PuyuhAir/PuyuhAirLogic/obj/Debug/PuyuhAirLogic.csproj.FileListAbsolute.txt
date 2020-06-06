@@ -9,3 +9,17 @@ D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAirLogic\obj\Debug\
 D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAirLogic\obj\Debug\PuyuhAirLogic.csproj.CopyComplete
 D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAirLogic\obj\Debug\PuyuhAirLogic.dll
 D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAirLogic\obj\Debug\PuyuhAirLogic.pdb
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirLogic\bin\Debug\PuyuhAirLogic.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirLogic\bin\Debug\PuyuhAirLogic.pdb
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirLogic\bin\Debug\PuyuhAir.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirLogic\bin\Debug\PuyuhAirDAL.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirLogic\bin\Debug\EntityFramework.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirLogic\bin\Debug\PuyuhAirDAL.pdb
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirLogic\bin\Debug\PuyuhAirDAL.dll.config
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirLogic\bin\Debug\PuyuhAir.pdb
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirLogic\bin\Debug\PuyuhAir.dll.config
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirLogic\bin\Debug\EntityFramework.xml
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirLogic\obj\Debug\PuyuhAirLogic.csprojAssemblyReference.cache
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirLogic\obj\Debug\PuyuhAirLogic.csproj.CopyComplete
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirLogic\obj\Debug\PuyuhAirLogic.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirLogic\obj\Debug\PuyuhAirLogic.pdb

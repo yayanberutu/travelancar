@@ -45,6 +45,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PuyuhAirDAL\PuyuhAirDAL.csproj">
+      <Project>{9e31c5bc-afb5-4bc8-9d11-3332309b7251}</Project>
+      <Name>PuyuhAirDAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PuyuhAir\PuyuhAir.csproj">
       <Project>{7ac339fa-dced-4be1-82de-84d12f1e2129}</Project>
       <Name>PuyuhAir</Name>

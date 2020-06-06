@@ -9,3 +9,14 @@ D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAir\obj\Debug\Puyuh
 D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAir\obj\Debug\PuyuhAir.csproj.CopyComplete
 D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAir\obj\Debug\PuyuhAir.dll
 D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAir\obj\Debug\PuyuhAir.pdb
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\bin\Debug\PuyuhAir.dll.config
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\bin\Debug\PuyuhAir.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\bin\Debug\PuyuhAir.pdb
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\bin\Debug\EntityFramework.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\bin\Debug\EntityFramework.SqlServer.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\bin\Debug\EntityFramework.xml
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\bin\Debug\EntityFramework.SqlServer.xml
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\obj\Debug\PuyuhAir.csprojAssemblyReference.cache
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\obj\Debug\PuyuhAir.csproj.CopyComplete
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\obj\Debug\PuyuhAir.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\obj\Debug\PuyuhAir.pdb

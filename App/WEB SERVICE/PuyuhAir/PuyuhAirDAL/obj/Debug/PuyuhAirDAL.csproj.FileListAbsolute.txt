@@ -1,0 +1,14 @@
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirDAL\bin\Debug\PuyuhAirDAL.dll.config
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirDAL\bin\Debug\PuyuhAirDAL.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirDAL\bin\Debug\PuyuhAirDAL.pdb
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirDAL\bin\Debug\EntityFramework.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirDAL\bin\Debug\PuyuhAir.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirDAL\bin\Debug\PuyuhAir.pdb
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirDAL\bin\Debug\PuyuhAir.dll.config
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirDAL\bin\Debug\EntityFramework.xml
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirDAL\obj\Debug\PuyuhAirDAL.csprojAssemblyReference.cache
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirDAL\obj\Debug\PuyuhAirDAL.csproj.CopyComplete
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirDAL\obj\Debug\PuyuhAirDAL.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAirDAL\obj\Debug\PuyuhAirDAL.pdb
