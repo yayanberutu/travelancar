@@ -29,6 +29,5 @@ namespace PuyuhAir
         public virtual DbSet<penumpang> penumpang { get; set; }
         public virtual DbSet<Pesawats> Pesawats { get; set; }
         public virtual DbSet<tiket> tiket { get; set; }
-        public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
-    }
+         }
 }

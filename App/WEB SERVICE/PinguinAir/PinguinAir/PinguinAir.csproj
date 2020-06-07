@@ -92,7 +92,6 @@
     <Compile Include="penerbangan.cs">
       <DependentUpon>PinguinAirModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="PenerbanganContext.cs" />
     <Compile Include="Penerbangans.cs">
       <DependentUpon>PinguinAirModel.tt</DependentUpon>
     </Compile>
