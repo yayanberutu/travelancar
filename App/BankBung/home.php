@@ -20,12 +20,12 @@
 		<div class="content1" style="background-image :url('image/atk.jpg');">
 			<div class="gallery">
 				  <a href="Saldo.php">
-				    <img src="image/saldome.png" alt="Cek Saldo" width="200" height="100"></a>
+				    <img src="image/saldome.png" alt="Cek Saldo" width="300" height="300"></a>
 				  <div class="desc">Cek Saldo</div>
 			</div>
 			<div class="gallery">
-				  <a href="Bayar.php">
-				    <img src="image/pay.png" alt="Bayar" width="200" height="100"></a>
+				  <a href="bayar.php">
+				    <img src="image/pay.png" alt="Bayar" width="300" height="300"></a>
 				  <div class="desc">Bayar</div>
 			</div>
 		</div>

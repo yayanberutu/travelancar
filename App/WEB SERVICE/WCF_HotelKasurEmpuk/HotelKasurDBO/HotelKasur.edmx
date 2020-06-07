@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="HotelMawarMelatiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="booking">
+          <Key>
+            <PropertyRef Name="kode_booking" />
+          </Key>
+          <Property Name="kode_booking" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="tanggal_mulai" Type="datetime" />
+          <Property Name="tanggal_selesai" Type="datetime" />
+        </EntityType>
+        <EntityType Name="kamar">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="no_kamar" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="harga_akhir_pekan" Type="float" />
+          <Property Name="harga_biasa" Type="float" />
+          <Property Name="fasilitas" Type="text" />
+          <Property Name="status_tersedia" Type="char" MaxLength="1" />
+          <Property Name="kapasitas" Type="int" />
+          <Property Name="kode_booking" Type="char" MaxLength="10" />
+        </EntityType>
+        <Association Name="FK_kamar_booking">
+          <End Role="booking" Type="Self.booking" Multiplicity="0..1" />
+          <End Role="kamar" Type="Self.kamar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="booking">
+              <PropertyRef Name="kode_booking" />
+            </Principal>
+            <Dependent Role="kamar">
+              <PropertyRef Name="kode_booking" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HotelMawarMelatiModelStoreContainer">
+          <EntitySet Name="booking" EntityType="Self.booking" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="kamar" EntityType="Self.kamar" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_kamar_booking" Association="Self.FK_kamar_booking">
+            <End Role="booking" EntitySet="booking" />
+            <End Role="kamar" EntitySet="kamar" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HotelMawarMelatiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="booking">
+          <Key>
+            <PropertyRef Name="kode_booking" />
+          </Key>
+          <Property Name="kode_booking" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="tanggal_mulai" Type="DateTime" />
+          <Property Name="tanggal_selesai" Type="DateTime" />
+          <NavigationProperty Name="kamars" Relationship="Self.FK_kamar_booking" FromRole="booking" ToRole="kamar" />
+        </EntityType>
+        <EntityType Name="kamar">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="no_kamar" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="harga_akhir_pekan" Type="Double" />
+          <Property Name="harga_biasa" Type="Double" />
+          <Property Name="fasilitas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="status_tersedia" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="kapasitas" Type="Int32" />
+          <Property Name="kode_booking" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="booking" Relationship="Self.FK_kamar_booking" FromRole="kamar" ToRole="booking" />
+        </EntityType>
+        <Association Name="FK_kamar_booking">
+          <End Role="booking" Type="Self.booking" Multiplicity="0..1" />
+          <End Role="kamar" Type="Self.kamar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="booking">
+              <PropertyRef Name="kode_booking" />
+            </Principal>
+            <Dependent Role="kamar">
+              <PropertyRef Name="kode_booking" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HotelMawarMelatiEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="bookings" EntityType="Self.booking" />
+          <EntitySet Name="kamars" EntityType="Self.kamar" />
+          <AssociationSet Name="FK_kamar_booking" Association="Self.FK_kamar_booking">
+            <End Role="booking" EntitySet="bookings" />
+            <End Role="kamar" EntitySet="kamars" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HotelMawarMelatiModelStoreContainer" CdmEntityContainer="HotelMawarMelatiEntities">
+          <EntitySetMapping Name="bookings">
+            <EntityTypeMapping TypeName="HotelMawarMelatiModel.booking">
+              <MappingFragment StoreEntitySet="booking">
+                <ScalarProperty Name="kode_booking" ColumnName="kode_booking" />
+                <ScalarProperty Name="tanggal_mulai" ColumnName="tanggal_mulai" />
+                <ScalarProperty Name="tanggal_selesai" ColumnName="tanggal_selesai" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="kamars">
+            <EntityTypeMapping TypeName="HotelMawarMelatiModel.kamar">
+              <MappingFragment StoreEntitySet="kamar">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="no_kamar" ColumnName="no_kamar" />
+                <ScalarProperty Name="harga_akhir_pekan" ColumnName="harga_akhir_pekan" />
+                <ScalarProperty Name="harga_biasa" ColumnName="harga_biasa" />
+                <ScalarProperty Name="fasilitas" ColumnName="fasilitas" />
+                <ScalarProperty Name="status_tersedia" ColumnName="status_tersedia" />
+                <ScalarProperty Name="kapasitas" ColumnName="kapasitas" />
+                <ScalarProperty Name="kode_booking" ColumnName="kode_booking" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

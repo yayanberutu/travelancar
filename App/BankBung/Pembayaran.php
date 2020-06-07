@@ -10,16 +10,17 @@
 		<div class="header">
 			<h2 style="font-family: 'Short Stack' , cursive ; background-image: url('image/pay.png');">Daftar Pembayaran</h2>
 		</div>
-	<div class="tambah" style="background: lightblue; height: 350px;">
+	<div class="tambah" style="background: lightblue; height: 230px;">
 			
 				<fieldset>
 					<legend>Pembayaran anda</legend>
-					<table border="1" style="background-color: white; text-align: center;">
+					<table border="1" style="background-color: white; text-align: center; width: 100%">
 					<tr>
 						<td><b />ID Transaksi</td>
 						<td><b />Tagihan</td>
 					</tr>
-
+					<center>
+						<h3>
 				<?php
 					include "connect.php";
 					if(isset($_GET['nomor'])){
@@ -45,10 +46,12 @@
 										}
 								}
 						?>
+					</h3>
+				</center>
 				</table>
 				
   				
-  				<form action="bayar.php" method="">
+  				<form action="home.php" method="">
 						<br>
 						<input type="checkbox" id="konf" name="yes" value="yes" style="margin-top: 3%">
 		  				<label for="yes"> Anda sudah yakin ?</label><br>

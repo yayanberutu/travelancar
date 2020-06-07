@@ -1,0 +1,17 @@
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\ServiceInterfaceLayer\bin\Debug\ServiceInterfaceLayer.dll.config
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\ServiceInterfaceLayer\bin\Debug\ServiceInterfaceLayer.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\ServiceInterfaceLayer\bin\Debug\ServiceInterfaceLayer.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\ServiceInterfaceLayer\bin\Debug\BusinessDomainObject.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\ServiceInterfaceLayer\bin\Debug\BusinessLogic.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\ServiceInterfaceLayer\bin\Debug\EntityFramework.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\ServiceInterfaceLayer\bin\Debug\BusinessDomainObject.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\ServiceInterfaceLayer\bin\Debug\BusinessDomainObject.dll.config
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\ServiceInterfaceLayer\bin\Debug\BusinessLogic.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\ServiceInterfaceLayer\bin\Debug\EntityFramework.xml
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\ServiceInterfaceLayer\obj\Debug\ServiceInterfaceLayer.csprojAssemblyReference.cache
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\ServiceInterfaceLayer\obj\Debug\ServiceInterfaceLayer.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\ServiceInterfaceLayer\obj\Debug\ServiceInterfaceLayer.csproj.CopyComplete
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\ServiceInterfaceLayer\obj\Debug\ServiceInterfaceLayer.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\ServiceInterfaceLayer\obj\Debug\ServiceInterfaceLayer.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\ServiceInterfaceLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\ServiceInterfaceLayer\bin\Debug\EntityFramework.SqlServer.xml

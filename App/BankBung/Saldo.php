@@ -31,6 +31,7 @@
 					<br>
 					<br>
 				<br>
+				
 		</form>
 				<button onclick="location.href='home.php'" type="text" class="btm">Home</button>
 				<hr>

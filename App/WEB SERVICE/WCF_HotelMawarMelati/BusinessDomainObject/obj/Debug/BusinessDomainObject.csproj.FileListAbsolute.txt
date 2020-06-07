@@ -1,0 +1,11 @@
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessDomainObject\bin\Debug\BusinessDomainObject.dll.config
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessDomainObject\bin\Debug\BusinessDomainObject.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessDomainObject\bin\Debug\BusinessDomainObject.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessDomainObject\bin\Debug\EntityFramework.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessDomainObject\bin\Debug\EntityFramework.SqlServer.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessDomainObject\bin\Debug\EntityFramework.xml
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessDomainObject\bin\Debug\EntityFramework.SqlServer.xml
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessDomainObject\obj\Debug\BusinessDomainObject.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessDomainObject\obj\Debug\BusinessDomainObject.csproj.CopyComplete
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessDomainObject\obj\Debug\BusinessDomainObject.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessDomainObject\obj\Debug\BusinessDomainObject.pdb
