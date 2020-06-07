@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HotelMawarMelatiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Booking">
+    <Key>
+      <PropertyRef Name="kode_booking" />
+    </Key>
+    <Property Name="kode_booking" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="id_user" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="tanggal_booking" Type="datetime" Nullable="false" />
+    <Property Name="tanggal_mulai" Type="datetime" Nullable="false" />
+    <Property Name="tanggal_selesai" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BookingHistory">
+    <Key>
+      <PropertyRef Name="kode_booking" />
+      <PropertyRef Name="id_kamar" />
+    </Key>
+    <Property Name="kode_booking" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="id_kamar" Type="char" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Kamar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="no_kamar" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="harga_akhir_pekan" Type="float" Nullable="false" />
+    <Property Name="harga_biasa" Type="float" Nullable="false" />
+    <Property Name="fasilitas" Type="text" Nullable="false" />
+    <Property Name="kapasitas" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_booking_history_booking_history">
+    <End Role="BookingHistory" Type="Self.BookingHistory" Multiplicity="1" />
+    <End Role="BookingHistory1" Type="Self.BookingHistory" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="BookingHistory">
+        <PropertyRef Name="kode_booking" />
+        <PropertyRef Name="id_kamar" />
+      </Principal>
+      <Dependent Role="BookingHistory1">
+        <PropertyRef Name="kode_booking" />
+        <PropertyRef Name="id_kamar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HotelMawarMelatiModelStoreContainer">
+    <EntitySet Name="Booking" EntityType="Self.Booking" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookingHistory" EntityType="Self.BookingHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kamar" EntityType="Self.Kamar" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_booking_history_booking_history" Association="Self.FK_booking_history_booking_history">
+      <End Role="BookingHistory" EntitySet="BookingHistory" />
+      <End Role="BookingHistory1" EntitySet="BookingHistory" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

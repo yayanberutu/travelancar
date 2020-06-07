@@ -1,0 +1,12 @@
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessLogic\obj\Debug\BusinessLogic.csprojAssemblyReference.cache
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessLogic\obj\Debug\BusinessLogic.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessLogic\bin\Debug\BusinessDomainObject.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessLogic\bin\Debug\EntityFramework.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessLogic\bin\Debug\BusinessDomainObject.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessLogic\bin\Debug\BusinessDomainObject.dll.config
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessLogic\bin\Debug\EntityFramework.xml
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessLogic\obj\Debug\BusinessLogic.csproj.CopyComplete

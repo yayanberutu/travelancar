@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HotelMawarMelatiModelStoreContainer" CdmEntityContainer="HotelMawarMelatiEntities">
+    <EntitySetMapping Name="Bookings">
+      <EntityTypeMapping TypeName="HotelMawarMelatiModel.Booking">
+        <MappingFragment StoreEntitySet="Booking">
+          <ScalarProperty Name="kode_booking" ColumnName="kode_booking" />
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+          <ScalarProperty Name="tanggal_booking" ColumnName="tanggal_booking" />
+          <ScalarProperty Name="tanggal_mulai" ColumnName="tanggal_mulai" />
+          <ScalarProperty Name="tanggal_selesai" ColumnName="tanggal_selesai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookingHistories">
+      <EntityTypeMapping TypeName="HotelMawarMelatiModel.BookingHistory">
+        <MappingFragment StoreEntitySet="BookingHistory">
+          <ScalarProperty Name="kode_booking" ColumnName="kode_booking" />
+          <ScalarProperty Name="id_kamar" ColumnName="id_kamar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kamars">
+      <EntityTypeMapping TypeName="HotelMawarMelatiModel.Kamar">
+        <MappingFragment StoreEntitySet="Kamar">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="no_kamar" ColumnName="no_kamar" />
+          <ScalarProperty Name="harga_akhir_pekan" ColumnName="harga_akhir_pekan" />
+          <ScalarProperty Name="harga_biasa" ColumnName="harga_biasa" />
+          <ScalarProperty Name="fasilitas" ColumnName="fasilitas" />
+          <ScalarProperty Name="kapasitas" ColumnName="kapasitas" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

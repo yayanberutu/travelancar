@@ -1,0 +1,17 @@
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\HotelMawarMelatiService\obj\Debug\HotelMawarMelatiService.csprojAssemblyReference.cache
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\HotelMawarMelatiService\obj\Debug\HotelMawarMelatiService.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\HotelMawarMelatiService\bin\Debug\HotelMawarMelatiService.dll.config
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\HotelMawarMelatiService\bin\Debug\HotelMawarMelatiService.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\HotelMawarMelatiService\bin\Debug\HotelMawarMelatiService.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\HotelMawarMelatiService\bin\Debug\BusinessDomainObject.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\HotelMawarMelatiService\bin\Debug\BusinessLogic.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\HotelMawarMelatiService\bin\Debug\EntityFramework.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\HotelMawarMelatiService\bin\Debug\EntityFramework.SqlServer.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\HotelMawarMelatiService\bin\Debug\BusinessDomainObject.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\HotelMawarMelatiService\bin\Debug\BusinessDomainObject.dll.config
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\HotelMawarMelatiService\bin\Debug\BusinessLogic.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\HotelMawarMelatiService\bin\Debug\EntityFramework.xml
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\HotelMawarMelatiService\bin\Debug\EntityFramework.SqlServer.xml
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\HotelMawarMelatiService\obj\Debug\HotelMawarMelatiService.csproj.CopyComplete
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\HotelMawarMelatiService\obj\Debug\HotelMawarMelatiService.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\HotelMawarMelatiService\obj\Debug\HotelMawarMelatiService.pdb
