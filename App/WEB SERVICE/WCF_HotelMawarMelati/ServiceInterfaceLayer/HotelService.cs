@@ -19,7 +19,7 @@ namespace ServiceInterfaceLayer
             IEnumerable<KamarBDO> listkamarBDO = null;
             try
             {
-                kamarLogic.getAllKamar();
+                listkamarBDO = kamarLogic.getAllKamar();
             }
             catch (Exception e)
             {
@@ -47,8 +47,8 @@ namespace ServiceInterfaceLayer
         {
             try
             {
-                BookingBDO bookBDO = null;
-                KamarBDO kmrBDO = null;
+                BookingBDO bookBDO = new BookingBDO();
+                KamarBDO kmrBDO = new KamarBDO();
                 TranslateBookingDTOToBookingBDO(booking, bookBDO);
                 TranslateKamarDTOToKamarBDO(kmr, kmrBDO);
                 bookingLogic.InsertBooking(bookBDO, kmrBDO);
