@@ -10,3 +10,14 @@ E:\Semester 4\Proyek TekNet\ItikAirService\ItikAir\obj\Debug\ItikAir.csproj.Core
 E:\Semester 4\Proyek TekNet\ItikAirService\ItikAir\obj\Debug\ItikAir.csproj.CopyComplete
 E:\Semester 4\Proyek TekNet\ItikAirService\ItikAir\obj\Debug\ItikAir.dll
 E:\Semester 4\Proyek TekNet\ItikAirService\ItikAir\obj\Debug\ItikAir.pdb
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\ItikAirService\ItikAir\bin\ItikAir.dll.config
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\ItikAirService\ItikAir\bin\ItikAir.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\ItikAirService\ItikAir\bin\ItikAir.pdb
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\ItikAirService\ItikAir\bin\EntityFramework.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\ItikAirService\ItikAir\bin\EntityFramework.SqlServer.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\ItikAirService\ItikAir\bin\EntityFramework.xml
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\ItikAirService\ItikAir\bin\EntityFramework.SqlServer.xml
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\ItikAirService\ItikAir\obj\Debug\ItikAir.csprojAssemblyReference.cache
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\ItikAirService\ItikAir\obj\Debug\ItikAir.csproj.CopyComplete
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\ItikAirService\ItikAir\obj\Debug\ItikAir.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\ItikAirService\ItikAir\obj\Debug\ItikAir.pdb

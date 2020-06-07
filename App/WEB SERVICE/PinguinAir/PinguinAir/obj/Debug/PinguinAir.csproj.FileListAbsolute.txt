@@ -9,3 +9,14 @@ E:\Kuliah\Semester 4\Tek.NET\Proyek\FINAL\PinguinAir\PinguinAir\obj\Debug\Pingui
 E:\Kuliah\Semester 4\Tek.NET\Proyek\FINAL\PinguinAir\PinguinAir\obj\Debug\PinguinAir.csproj.CopyComplete
 E:\Kuliah\Semester 4\Tek.NET\Proyek\FINAL\PinguinAir\PinguinAir\obj\Debug\PinguinAir.dll
 E:\Kuliah\Semester 4\Tek.NET\Proyek\FINAL\PinguinAir\PinguinAir\obj\Debug\PinguinAir.pdb
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAir\bin\PinguinAir.dll.config
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAir\bin\PinguinAir.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAir\bin\PinguinAir.pdb
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAir\bin\EntityFramework.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAir\bin\EntityFramework.SqlServer.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAir\bin\EntityFramework.xml
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAir\bin\EntityFramework.SqlServer.xml
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAir\obj\Debug\PinguinAir.csprojAssemblyReference.cache
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAir\obj\Debug\PinguinAir.csproj.CopyComplete
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAir\obj\Debug\PinguinAir.dll
+C:\xampp\htdocs\BankBung\App\WEB SERVICE\PinguinAir\PinguinAir\obj\Debug\PinguinAir.pdb

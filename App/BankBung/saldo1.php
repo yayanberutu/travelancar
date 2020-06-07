@@ -22,6 +22,8 @@
 			<div class="awl">
 				<center><h2>Jumlah Saldo di rekening anda</h2></center>
 				<br>
+				<center>
+					<h3>
 				<?php
 					//session_start();
 					include "connect.php";
@@ -42,12 +44,16 @@
 						// 	header("location:Saldo.php?pesan=gagal");}
 						// }	
 						?>
+						</h3>
+				</center>
+				<br>
+				<br>
+				<br>
+				<br>
 				<br>
 				<br>
 				<button onclick="location.href='Saldo.php'" class="btm">Kembali
 				</button>
-				<hr>
-				
 			</div>
 		</form>
 		</div>

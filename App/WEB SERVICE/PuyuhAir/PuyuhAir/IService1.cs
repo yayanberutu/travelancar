@@ -7,7 +7,8 @@ using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
 
-namespace PinguinAir
+
+namespace PuyuhAir
 {
     [ServiceContract]
     public interface IService1
