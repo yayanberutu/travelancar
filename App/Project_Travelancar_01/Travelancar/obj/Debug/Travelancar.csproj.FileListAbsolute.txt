@@ -324,3 +324,11 @@ E:\Semester 4\Proyek TekNet\Project_Travelancar_01\Travelancar\obj\Debug\Travela
 E:\Semester 4\Proyek TekNet\Project_Travelancar_01\Travelancar\obj\Debug\Travelancar.dll
 E:\Semester 4\Proyek TekNet\Project_Travelancar_01\Travelancar\obj\Debug\Travelancar.pdb
 >>>>>>> 933d920a332e994a53753db1e965882b47b94f96
+C:\xampp\htdocs\TEKNET\travelancar\App\Project_Travelancar_01\Travelancar\bin\EntityFramework.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\Project_Travelancar_01\Travelancar\bin\EntityFramework.SqlServer.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\Project_Travelancar_01\Travelancar\bin\WebMatrix.Data.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\Project_Travelancar_01\Travelancar\bin\WebMatrix.WebData.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\Project_Travelancar_01\Travelancar\bin\EntityFramework.xml
+C:\xampp\htdocs\TEKNET\travelancar\App\Project_Travelancar_01\Travelancar\bin\EntityFramework.SqlServer.xml
+C:\xampp\htdocs\TEKNET\travelancar\App\Project_Travelancar_01\Travelancar\bin\WebMatrix.Data.xml
+C:\xampp\htdocs\TEKNET\travelancar\App\Project_Travelancar_01\Travelancar\bin\WebMatrix.WebData.xml

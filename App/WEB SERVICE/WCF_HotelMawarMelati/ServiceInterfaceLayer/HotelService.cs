@@ -66,7 +66,8 @@ namespace ServiceInterfaceLayer
             kmr.id = kmrBDO.id;
             kmr.no_kamar = kmrBDO.no_kamar;
             kmr.harga_akhir_pekan = kmrBDO.harga_akhir_pekan;
-            kmr.harga_biasa = kmrBDO.harga_biasa;
+            kmr.harga_biasa = kmrBDO.harga_biasa;   
+            kmr.fasilitas = kmrBDO.fasilitas;
             kmr.kapasitas = kmrBDO.kapasitas;
             kmr.status = kmrBDO.status;
         }
@@ -77,6 +78,7 @@ namespace ServiceInterfaceLayer
             kmrBDO.no_kamar = kmr.no_kamar;
             kmrBDO.harga_akhir_pekan = kmr.harga_akhir_pekan;
             kmrBDO.harga_biasa = kmr.harga_biasa;
+            kmrBDO.fasilitas = kmr.fasilitas;
             kmrBDO.kapasitas = kmr.kapasitas;
             kmrBDO.status = kmr.status;
 
@@ -93,6 +95,7 @@ namespace ServiceInterfaceLayer
 
         public void TranslateBookingDTOToBookingBDO(Booking book, BookingBDO bookBDO)
         {
+            bookBDO = new BookingBDO();
             bookBDO.id_user = book.id_user;
             bookBDO.kode_booking = book.kode_booking;
             bookBDO.tanggal_booking = book.tanggal_booking;
