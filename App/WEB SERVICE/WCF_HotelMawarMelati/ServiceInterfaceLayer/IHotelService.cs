@@ -5,11 +5,11 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
-namespace HotelMawarMelatiService
+namespace ServiceInterfaceLayer
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract]
-    public interface IHotelMawarMelatiService
+    public interface IHotelService
     {
         [OperationContract]
         [FaultContract(typeof(HotelMawarMelatiFault))]
@@ -23,7 +23,7 @@ namespace HotelMawarMelatiService
     }
 
     // Use a data contract as illustrated in the sample below to add composite types to service operations.
-    // You can add XSD files into the project. After building the project, you can directly use the data types defined there, with the namespace "HotelMawarMelatiService.ContractType".
+    // You can add XSD files into the project. After building the project, you can directly use the data types defined there, with the namespace "ServiceInterfaceLayer.ContractType".
     [DataContract]
     public class Kamar
     {
@@ -42,7 +42,6 @@ namespace HotelMawarMelatiService
         [DataMember]
         public int status { get; set; }
     }
-
     [DataContract]
     public class Booking
     {

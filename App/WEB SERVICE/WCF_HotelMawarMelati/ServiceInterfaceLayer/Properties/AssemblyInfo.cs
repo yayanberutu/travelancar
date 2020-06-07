@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("HotelMawarMelatiService")]
+[assembly: AssemblyTitle("ServiceInterfaceLayer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("HotelMawarMelatiService")]
+[assembly: AssemblyProduct("ServiceInterfaceLayer")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("65877e99-6279-4b0c-8582-de15efe92da9")]
+[assembly: Guid("650313b4-48e9-4811-80ab-1907a9474d66")]
 
 // Version information for an assembly consists of the following four values:
 //

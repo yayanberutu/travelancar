@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace BusinessLogic
 {
-    
+
     public class KamarBL
     {
         BusinessDomainObject.KamarBDO kamarBDO = new BusinessDomainObject.KamarBDO();
@@ -19,7 +15,7 @@ namespace BusinessLogic
     public class BookingBL
     {
         BusinessDomainObject.BookingBDO bookingBDO = new BusinessDomainObject.BookingBDO();
-        public void InsertBooking(BusinessDomainObject.BookingBDO booking,  BusinessDomainObject.KamarBDO kmr)
+        public void InsertBooking(BusinessDomainObject.BookingBDO booking, BusinessDomainObject.KamarBDO kmr)
         {
             bookingBDO.InsertBooking(booking, kmr);
         }

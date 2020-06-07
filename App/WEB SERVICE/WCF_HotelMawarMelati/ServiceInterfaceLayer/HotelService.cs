@@ -1,18 +1,19 @@
-﻿using BusinessDomainObject;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using BusinessDomainObject;
+using BusinessLogic;
 
-namespace HotelMawarMelatiService
+namespace ServiceInterfaceLayer
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
-    public class HotelMawarMelatiService : IHotelMawarMelatiService
+    public class HotelService : IHotelService
     {
-        BusinessLogic.KamarBL kamarLogic = new BusinessLogic.KamarBL();
-        BusinessLogic.BookingBL bookingLogic = new BusinessLogic.BookingBL();
+        KamarBL kamarLogic = new KamarBL();
+        BookingBL bookingLogic = new BookingBL();
         public IEnumerable<Kamar> getAllKamar()
         {
             IEnumerable<KamarBDO> listkamarBDO = null;
@@ -59,6 +60,7 @@ namespace HotelMawarMelatiService
                 throw new FaultException<HotelMawarMelatiFault>(new HotelMawarMelatiFault(msg), reason);
             }
         }
+
         public void TranslateKamarBDOToKamarDTO(KamarBDO kmrBDO, Kamar kmr)
         {
             kmr.id = kmrBDO.id;
