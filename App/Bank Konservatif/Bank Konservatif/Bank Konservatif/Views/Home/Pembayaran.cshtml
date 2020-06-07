@@ -1,4 +1,4 @@
-﻿
+﻿@using Bank_Konservatif.Models;
 @{
     Layout = null;
 }
@@ -11,7 +11,32 @@
     <title>Pembayaran</title>
 </head>
 <body>
-    <div> 
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">invoice number</th>
+                    <th scope="col">nominal</th>
+                    <th scope="col">Status Bayar</th>
+                    <th scope="col">Action Bayar</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var v in ViewBag.lp)
+                {
+                    <tr>
+                        <th scope="row">@v.invoice_number</th>
+                        <td>@v.invoice_number.nominal</td>
+                        <td>@v.status_bayar</td>
+                        <td>Bayar</td>
+                    </tr>
+
+                }
+
+            </tbody>
+        </table>
     </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
 </body>
 </html>

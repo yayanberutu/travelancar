@@ -10,6 +10,7 @@ namespace Bank_Konservatif.Controllers
     public class AutentikasiController : Controller
     {
         // GET: Autentikasi
+        private BankKonservatifService.PembayaranServiceClient serviceBank = new BankKonservatifService.PembayaranServiceClient();
         public ActionResult Index()
         {
             return View();

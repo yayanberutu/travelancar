@@ -14,11 +14,20 @@ namespace Bank_Konservatif.Models
     
     public partial class nasabah
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public nasabah()
+        {
+            this.Pembayarans = new HashSet<Pembayaran>();
+        }
+    
         public string no_rekening { get; set; }
         public string nama { get; set; }
         public string alamat { get; set; }
         public string no_ktp { get; set; }
         public string password { get; set; }
         public Nullable<double> saldo { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Pembayaran> Pembayarans { get; set; }
     }
 }

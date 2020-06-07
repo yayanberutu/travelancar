@@ -6,6 +6,8 @@
     <edmx:Diagrams>
       <Diagram DiagramId="f459947dd71e4e5c8989b8c6d86da100" Name="Diagram1">
         <EntityTypeShape EntityType="BankKonservatifModel.nasabah" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BankKonservatifModel.Pembayaran" Width="1.5" PointX="3.5" PointY="3.125" />
+        <AssociationConnector Association="BankKonservatifModel.FK_Pembayaran_nasabah" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

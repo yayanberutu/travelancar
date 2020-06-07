@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PembayaranService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PembayaranService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfPembayaran">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Pembayaran" nillable="true" type="tns:Pembayaran" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPembayaran" nillable="true" type="tns:ArrayOfPembayaran" />
+  <xs:complexType name="Pembayaran">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="invoice_number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nominal" type="xs:double" />
+      <xs:element minOccurs="0" name="norek_bayar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="status_bayar" type="xs:int" />
+      <xs:element minOccurs="0" name="waktu_bayar" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="waktu_pesan" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Pembayaran" nillable="true" type="tns:Pembayaran" />
+  <xs:complexType name="PembayaranFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FaultMessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PembayaranFault" nillable="true" type="tns:PembayaranFault" />
+</xs:schema>

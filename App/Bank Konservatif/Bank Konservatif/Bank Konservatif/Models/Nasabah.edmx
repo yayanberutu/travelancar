@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="BankKonservatifModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="BankKonservatifModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="nasabah">
           <Key>
             <PropertyRef Name="no_rekening" />
@@ -16,11 +16,38 @@
           <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="saldo" Type="float" />
         </EntityType>
+        <EntityType Name="Pembayaran">
+          <Key>
+            <PropertyRef Name="invoice_number" />
+          </Key>
+          <Property Name="invoice_number" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="waktu_pemesanan" Type="datetime" Nullable="false" />
+          <Property Name="waktu_pembayaran" Type="datetime" />
+          <Property Name="nominal" Type="float" Nullable="false" />
+          <Property Name="status_bayar" Type="int" Nullable="false" />
+          <Property Name="norek_bayar" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Pembayaran_nasabah">
+          <End Role="nasabah" Type="Self.nasabah" Multiplicity="0..1" />
+          <End Role="Pembayaran" Type="Self.Pembayaran" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="nasabah">
+              <PropertyRef Name="no_rekening" />
+            </Principal>
+            <Dependent Role="Pembayaran">
+              <PropertyRef Name="norek_bayar" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="BankKonservatifModelStoreContainer">
           <EntitySet Name="nasabah" EntityType="Self.nasabah" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Pembayaran" EntityType="Self.Pembayaran" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Pembayaran_nasabah" Association="Self.FK_Pembayaran_nasabah">
+            <End Role="nasabah" EntitySet="nasabah" />
+            <End Role="Pembayaran" EntitySet="Pembayaran" />
+          </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="BankKonservatifModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -34,10 +61,40 @@
           <Property Name="no_ktp" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="saldo" Type="Double" />
+          <NavigationProperty Name="Pembayarans" Relationship="BankKonservatifModel.FK_Pembayaran_nasabah" FromRole="nasabah" ToRole="Pembayaran" />
         </EntityType>
         <EntityContainer Name="BankKonservatifEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="nasabahs" EntityType="Self.nasabah" />
+          <EntitySet Name="Pembayarans" EntityType="BankKonservatifModel.Pembayaran" />
+          <AssociationSet Name="FK_Pembayaran_nasabah" Association="BankKonservatifModel.FK_Pembayaran_nasabah">
+            <End Role="nasabah" EntitySet="nasabahs" />
+            <End Role="Pembayaran" EntitySet="Pembayarans" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="Pembayaran">
+          <Key>
+            <PropertyRef Name="invoice_number" />
+          </Key>
+          <Property Name="invoice_number" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="waktu_pemesanan" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="waktu_pembayaran" Type="DateTime" Precision="3" />
+          <Property Name="nominal" Type="Double" Nullable="false" />
+          <Property Name="status_bayar" Type="Int32" Nullable="false" />
+          <Property Name="norek_bayar" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="nasabah" Relationship="BankKonservatifModel.FK_Pembayaran_nasabah" FromRole="Pembayaran" ToRole="nasabah" />
+        </EntityType>
+        <Association Name="FK_Pembayaran_nasabah">
+          <End Type="BankKonservatifModel.nasabah" Role="nasabah" Multiplicity="0..1" />
+          <End Type="BankKonservatifModel.Pembayaran" Role="Pembayaran" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="nasabah">
+              <PropertyRef Name="no_rekening" />
+            </Principal>
+            <Dependent Role="Pembayaran">
+              <PropertyRef Name="norek_bayar" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -53,6 +110,18 @@
                 <ScalarProperty Name="no_ktp" ColumnName="no_ktp" />
                 <ScalarProperty Name="password" ColumnName="password" />
                 <ScalarProperty Name="saldo" ColumnName="saldo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pembayarans">
+            <EntityTypeMapping TypeName="BankKonservatifModel.Pembayaran">
+              <MappingFragment StoreEntitySet="Pembayaran">
+                <ScalarProperty Name="norek_bayar" ColumnName="norek_bayar" />
+                <ScalarProperty Name="status_bayar" ColumnName="status_bayar" />
+                <ScalarProperty Name="nominal" ColumnName="nominal" />
+                <ScalarProperty Name="waktu_pembayaran" ColumnName="waktu_pembayaran" />
+                <ScalarProperty Name="waktu_pemesanan" ColumnName="waktu_pemesanan" />
+                <ScalarProperty Name="invoice_number" ColumnName="invoice_number" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

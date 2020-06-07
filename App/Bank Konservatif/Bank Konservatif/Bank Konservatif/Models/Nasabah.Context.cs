@@ -26,5 +26,6 @@ namespace Bank_Konservatif.Models
         }
     
         public virtual DbSet<nasabah> nasabahs { get; set; }
+        public virtual DbSet<Pembayaran> Pembayarans { get; set; }
     }
 }
