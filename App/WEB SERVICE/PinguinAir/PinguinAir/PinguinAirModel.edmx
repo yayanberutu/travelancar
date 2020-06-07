@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="pingiun_airModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="__MigrationHistory">
+          <Key>
+            <PropertyRef Name="MigrationId" />
+            <PropertyRef Name="ContextKey" />
+          </Key>
+          <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+          <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+          <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="penerbangan">
+          <Key>
+            <PropertyRef Name="id_penerbangan" />
+          </Key>
+          <Property Name="id_penerbangan" Type="int" Nullable="false" />
+          <Property Name="nama_maskapai" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="kota_asal" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="kota_tujuan" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="tanggal_keberangkatan" Type="datetime" Nullable="false" />
+          <Property Name="jam_keberangkatan" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="harga" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Penerbangans">
+          <Key>
+            <PropertyRef Name="id_penerbangan" />
+          </Key>
+          <Property Name="id_penerbangan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nama_maskapai" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="kota_asal" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="kota_tujuan" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="tanggal_keberangkatan" Type="datetime" Nullable="false" />
+          <Property Name="jam_keberangkatan" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="harga" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="penumpang">
+          <Key>
+            <PropertyRef Name="id_penumpang" />
+          </Key>
+          <Property Name="id_penumpang" Type="int" Nullable="false" />
+          <Property Name="id_tiket" Type="int" Nullable="false" />
+          <Property Name="nama" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="nomor_identitas" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Penumpangs">
+          <Key>
+            <PropertyRef Name="id_penumpang" />
+          </Key>
+          <Property Name="id_penumpang" Type="int" Nullable="false" />
+          <Property Name="id_tiket" Type="int" />
+          <Property Name="nama" Type="nvarchar" MaxLength="250" />
+          <Property Name="nomor_identitas" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="tiket">
+          <Key>
+            <PropertyRef Name="id_tiket" />
+          </Key>
+          <Property Name="id_tiket" Type="int" Nullable="false" />
+          <Property Name="id_penerbangan" Type="int" Nullable="false" />
+          <Property Name="kode_booking" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="waktu_booking" Type="datetime" />
+          <Property Name="batas_waktu_bayar_atm" Type="datetime" />
+          <Property Name="batas_waktu_bayar_internet_banking" Type="datetime" />
+          <Property Name="kode_bayar" Type="nvarchar" MaxLength="250" />
+          <Property Name="STATUS" Type="nvarchar" MaxLength="50" />
+          <Property Name="user_id" Type="int" />
+          <Property Name="total_harga" Type="bigint" />
+        </EntityType>
+        <EntityContainer Name="pingiun_airModelStoreContainer">
+          <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="penerbangan" EntityType="Self.penerbangan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Penerbangans" EntityType="Self.Penerbangans" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="penumpang" EntityType="Self.penumpang" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Penumpangs" EntityType="Self.Penumpangs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tiket" EntityType="Self.tiket" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="pingiun_airModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="C__MigrationHistory">
+          <Key>
+            <PropertyRef Name="MigrationId" />
+            <PropertyRef Name="ContextKey" />
+          </Key>
+          <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="penerbangan">
+          <Key>
+            <PropertyRef Name="id_penerbangan" />
+          </Key>
+          <Property Name="id_penerbangan" Type="Int32" Nullable="false" />
+          <Property Name="nama_maskapai" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="kota_asal" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="kota_tujuan" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="tanggal_keberangkatan" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="jam_keberangkatan" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="harga" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Penerbangans">
+          <Key>
+            <PropertyRef Name="id_penerbangan" />
+          </Key>
+          <Property Name="id_penerbangan" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nama_maskapai" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="kota_asal" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="kota_tujuan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="tanggal_keberangkatan" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="jam_keberangkatan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="harga" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="penumpang">
+          <Key>
+            <PropertyRef Name="id_penumpang" />
+          </Key>
+          <Property Name="id_penumpang" Type="Int32" Nullable="false" />
+          <Property Name="id_tiket" Type="Int32" Nullable="false" />
+          <Property Name="nama" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="nomor_identitas" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Penumpangs">
+          <Key>
+            <PropertyRef Name="id_penumpang" />
+          </Key>
+          <Property Name="id_penumpang" Type="Int32" Nullable="false" />
+          <Property Name="id_tiket" Type="Int32" />
+          <Property Name="nama" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="nomor_identitas" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tiket">
+          <Key>
+            <PropertyRef Name="id_tiket" />
+          </Key>
+          <Property Name="id_tiket" Type="Int32" Nullable="false" />
+          <Property Name="id_penerbangan" Type="Int32" Nullable="false" />
+          <Property Name="kode_booking" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="waktu_booking" Type="DateTime" Precision="3" />
+          <Property Name="batas_waktu_bayar_atm" Type="DateTime" Precision="3" />
+          <Property Name="batas_waktu_bayar_internet_banking" Type="DateTime" Precision="3" />
+          <Property Name="kode_bayar" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="user_id" Type="Int32" />
+          <Property Name="total_harga" Type="Int64" />
+        </EntityType>
+        <EntityContainer Name="pingiun_airEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+          <EntitySet Name="penerbangan" EntityType="Self.penerbangan" />
+          <EntitySet Name="Penerbangans" EntityType="Self.Penerbangans" />
+          <EntitySet Name="penumpang" EntityType="Self.penumpang" />
+          <EntitySet Name="Penumpangs" EntityType="Self.Penumpangs" />
+          <EntitySet Name="tiket" EntityType="Self.tiket" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="pingiun_airModelStoreContainer" CdmEntityContainer="pingiun_airEntities">
+          <EntitySetMapping Name="C__MigrationHistory">
+            <EntityTypeMapping TypeName="pingiun_airModel.C__MigrationHistory">
+              <MappingFragment StoreEntitySet="__MigrationHistory">
+                <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+                <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="penerbangan">
+            <EntityTypeMapping TypeName="pingiun_airModel.penerbangan">
+              <MappingFragment StoreEntitySet="penerbangan">
+                <ScalarProperty Name="id_penerbangan" ColumnName="id_penerbangan" />
+                <ScalarProperty Name="nama_maskapai" ColumnName="nama_maskapai" />
+                <ScalarProperty Name="kota_asal" ColumnName="kota_asal" />
+                <ScalarProperty Name="kota_tujuan" ColumnName="kota_tujuan" />
+                <ScalarProperty Name="tanggal_keberangkatan" ColumnName="tanggal_keberangkatan" />
+                <ScalarProperty Name="jam_keberangkatan" ColumnName="jam_keberangkatan" />
+                <ScalarProperty Name="harga" ColumnName="harga" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Penerbangans">
+            <EntityTypeMapping TypeName="pingiun_airModel.Penerbangans">
+              <MappingFragment StoreEntitySet="Penerbangans">
+                <ScalarProperty Name="id_penerbangan" ColumnName="id_penerbangan" />
+                <ScalarProperty Name="nama_maskapai" ColumnName="nama_maskapai" />
+                <ScalarProperty Name="kota_asal" ColumnName="kota_asal" />
+                <ScalarProperty Name="kota_tujuan" ColumnName="kota_tujuan" />
+                <ScalarProperty Name="tanggal_keberangkatan" ColumnName="tanggal_keberangkatan" />
+                <ScalarProperty Name="jam_keberangkatan" ColumnName="jam_keberangkatan" />
+                <ScalarProperty Name="harga" ColumnName="harga" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="penumpang">
+            <EntityTypeMapping TypeName="pingiun_airModel.penumpang">
+              <MappingFragment StoreEntitySet="penumpang">
+                <ScalarProperty Name="id_penumpang" ColumnName="id_penumpang" />
+                <ScalarProperty Name="id_tiket" ColumnName="id_tiket" />
+                <ScalarProperty Name="nama" ColumnName="nama" />
+                <ScalarProperty Name="nomor_identitas" ColumnName="nomor_identitas" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Penumpangs">
+            <EntityTypeMapping TypeName="pingiun_airModel.Penumpangs">
+              <MappingFragment StoreEntitySet="Penumpangs">
+                <ScalarProperty Name="id_penumpang" ColumnName="id_penumpang" />
+                <ScalarProperty Name="id_tiket" ColumnName="id_tiket" />
+                <ScalarProperty Name="nama" ColumnName="nama" />
+                <ScalarProperty Name="nomor_identitas" ColumnName="nomor_identitas" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tiket">
+            <EntityTypeMapping TypeName="pingiun_airModel.tiket">
+              <MappingFragment StoreEntitySet="tiket">
+                <ScalarProperty Name="id_tiket" ColumnName="id_tiket" />
+                <ScalarProperty Name="id_penerbangan" ColumnName="id_penerbangan" />
+                <ScalarProperty Name="kode_booking" ColumnName="kode_booking" />
+                <ScalarProperty Name="waktu_booking" ColumnName="waktu_booking" />
+                <ScalarProperty Name="batas_waktu_bayar_atm" ColumnName="batas_waktu_bayar_atm" />
+                <ScalarProperty Name="batas_waktu_bayar_internet_banking" ColumnName="batas_waktu_bayar_internet_banking" />
+                <ScalarProperty Name="kode_bayar" ColumnName="kode_bayar" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="total_harga" ColumnName="total_harga" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
