@@ -16,7 +16,7 @@ namespace ServiceInterfaceLayer
         IEnumerable<Kamar> getAllKamar();
 
         [OperationContract]
-        [FaultContract(typeof(HotelMawarMelatiFault))]
+        //[FaultContract(typeof(HotelMawarMelatiFault))]
         void InsertBooking(Booking booking, Kamar kmr);
 
         // TODO: Add your service operations here

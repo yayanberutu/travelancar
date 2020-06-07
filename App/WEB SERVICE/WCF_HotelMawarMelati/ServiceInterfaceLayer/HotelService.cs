@@ -95,7 +95,6 @@ namespace ServiceInterfaceLayer
 
         public void TranslateBookingDTOToBookingBDO(Booking book, BookingBDO bookBDO)
         {
-            bookBDO = new BookingBDO();
             bookBDO.id_user = book.id_user;
             bookBDO.kode_booking = book.kode_booking;
             bookBDO.tanggal_booking = book.tanggal_booking;

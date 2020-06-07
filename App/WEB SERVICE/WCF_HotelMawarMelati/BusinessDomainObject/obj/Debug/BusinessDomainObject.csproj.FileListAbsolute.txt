@@ -9,3 +9,4 @@ C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\Business
 C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessDomainObject\obj\Debug\BusinessDomainObject.csproj.CopyComplete
 C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessDomainObject\obj\Debug\BusinessDomainObject.dll
 C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessDomainObject\obj\Debug\BusinessDomainObject.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\WEB SERVICE\WCF_HotelMawarMelati\BusinessDomainObject\obj\Debug\BusinessDomainObject.csprojAssemblyReference.cache
