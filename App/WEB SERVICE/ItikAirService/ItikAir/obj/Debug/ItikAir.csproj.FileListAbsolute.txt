@@ -1,0 +1,12 @@
+E:\Semester 4\Proyek TekNet\ItikAirService\ItikAir\bin\ItikAir.dll.config
+E:\Semester 4\Proyek TekNet\ItikAirService\ItikAir\bin\ItikAir.dll
+E:\Semester 4\Proyek TekNet\ItikAirService\ItikAir\bin\ItikAir.pdb
+E:\Semester 4\Proyek TekNet\ItikAirService\ItikAir\bin\EntityFramework.dll
+E:\Semester 4\Proyek TekNet\ItikAirService\ItikAir\bin\EntityFramework.SqlServer.dll
+E:\Semester 4\Proyek TekNet\ItikAirService\ItikAir\bin\EntityFramework.xml
+E:\Semester 4\Proyek TekNet\ItikAirService\ItikAir\bin\EntityFramework.SqlServer.xml
+E:\Semester 4\Proyek TekNet\ItikAirService\ItikAir\obj\Debug\ItikAir.csprojAssemblyReference.cache
+E:\Semester 4\Proyek TekNet\ItikAirService\ItikAir\obj\Debug\ItikAir.csproj.CoreCompileInputs.cache
+E:\Semester 4\Proyek TekNet\ItikAirService\ItikAir\obj\Debug\ItikAir.csproj.CopyComplete
+E:\Semester 4\Proyek TekNet\ItikAirService\ItikAir\obj\Debug\ItikAir.dll
+E:\Semester 4\Proyek TekNet\ItikAirService\ItikAir\obj\Debug\ItikAir.pdb

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="itik_airModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="penerbangan">
+    <Key>
+      <PropertyRef Name="id_penerbangan" />
+    </Key>
+    <Property Name="id_penerbangan" Type="Int32" Nullable="false" />
+    <Property Name="nama_maskapai" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="kota_asal" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="kota_tujuan" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="tanggal_keberangkatan" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="jam_keberangkatan" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="harga" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tiket" Relationship="Self.FK_No_Penerbangan" FromRole="penerbangan" ToRole="tiket" />
+  </EntityType>
+  <EntityType Name="penumpang">
+    <Key>
+      <PropertyRef Name="id_penumpang" />
+    </Key>
+    <Property Name="id_penumpang" Type="Int32" Nullable="false" />
+    <Property Name="id_tiket" Type="Int32" Nullable="false" />
+    <Property Name="nama" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="nomor_identitas" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tiket">
+    <Key>
+      <PropertyRef Name="id_tiket" />
+    </Key>
+    <Property Name="id_tiket" Type="Int32" Nullable="false" />
+    <Property Name="id_penerbangan" Type="Int32" Nullable="false" />
+    <Property Name="kode_booking" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="waktu_booking" Type="DateTime" Precision="3" />
+    <Property Name="batas_waktu_bayar_atm" Type="DateTime" Precision="3" />
+    <Property Name="batas_waktu_bayar_internet_banking" Type="DateTime" Precision="3" />
+    <Property Name="kode_bayar" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="total_harga" Type="Int64" />
+    <NavigationProperty Name="penerbangan" Relationship="Self.FK_No_Penerbangan" FromRole="tiket" ToRole="penerbangan" />
+  </EntityType>
+  <Association Name="FK_No_Penerbangan">
+    <End Role="penerbangan" Type="Self.penerbangan" Multiplicity="1" />
+    <End Role="tiket" Type="Self.tiket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="penerbangan">
+        <PropertyRef Name="id_penerbangan" />
+      </Principal>
+      <Dependent Role="tiket">
+        <PropertyRef Name="id_penerbangan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="itik_airEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="penerbangan" EntityType="Self.penerbangan" />
+    <EntitySet Name="penumpang" EntityType="Self.penumpang" />
+    <EntitySet Name="tiket" EntityType="Self.tiket" />
+    <AssociationSet Name="FK_No_Penerbangan" Association="Self.FK_No_Penerbangan">
+      <End Role="penerbangan" EntitySet="penerbangan" />
+      <End Role="tiket" EntitySet="tiket" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

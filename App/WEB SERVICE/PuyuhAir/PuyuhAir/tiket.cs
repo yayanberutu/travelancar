@@ -24,5 +24,7 @@ namespace PuyuhAir
         public string STATUS { get; set; }
         public Nullable<int> user_id { get; set; }
         public Nullable<long> total_harga { get; set; }
+    
+        public virtual penerbangan penerbangan { get; set; }
     }
 }
