@@ -49,6 +49,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -120,16 +122,98 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Connected Services\hotel_kasur_empuk_service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\hotel_mawar_melati_service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\maskapai_puyuh_air_service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BookingKamar.cs" />
     <Compile Include="Models\DaftarPenerbangan.cs" />
+    <Compile Include="Models\findTiket.cs" />
+    <Compile Include="Models\KamarAll.cs" />
+    <Compile Include="Models\PemesananAll.cs" />
     <Compile Include="Models\penerbanganbaru.cs" />
     <Compile Include="Models\penerbangan.cs" />
+    <Compile Include="Models\PenerbanganAll.cs" />
+    <Compile Include="Models\PenumpangAll.cs" />
+    <Compile Include="Models\perbandinganhotel.cs" />
+    <Compile Include="Models\TiketAll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\hotel_kasur_empuk_service\Service1.wsdl" />
+    <None Include="Connected Services\hotel_kasur_empuk_service\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\hotel_kasur_empuk_service\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\hotel_kasur_empuk_service\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\hotel_kasur_empuk_service\Travelancar.hotel_kasur_empuk_service.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\hotel_kasur_empuk_service\Travelancar.hotel_kasur_empuk_service.kamar.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\hotel_kasur_empuk_service\Travelancar.hotel_kasur_empuk_service.pemesanan.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\hotel_mawar_melati_service\Service1.wsdl" />
+    <None Include="Connected Services\hotel_mawar_melati_service\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\hotel_mawar_melati_service\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\hotel_mawar_melati_service\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\hotel_mawar_melati_service\Travelancar.hotel_mawar_melati_service.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\hotel_mawar_melati_service\Travelancar.hotel_mawar_melati_service.kamar.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\hotel_mawar_melati_service\Travelancar.hotel_mawar_melati_service.pemesanan.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\maskapai_puyuh_air_service\Service1.disco" />
+    <None Include="Connected Services\maskapai_puyuh_air_service\configuration91.svcinfo" />
+    <None Include="Connected Services\maskapai_puyuh_air_service\configuration.svcinfo" />
+    <None Include="Connected Services\maskapai_puyuh_air_service\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\hotel_kasur_empuk_service\Service1.disco" />
+    <None Include="Connected Services\hotel_kasur_empuk_service\configuration91.svcinfo" />
+    <None Include="Connected Services\hotel_kasur_empuk_service\configuration.svcinfo" />
+    <None Include="Connected Services\hotel_kasur_empuk_service\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\hotel_mawar_melati_service\Service1.disco" />
+    <None Include="Connected Services\hotel_mawar_melati_service\configuration91.svcinfo" />
+    <None Include="Connected Services\hotel_mawar_melati_service\configuration.svcinfo" />
+    <None Include="Connected Services\hotel_mawar_melati_service\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -140,6 +224,31 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Connected Services\maskapai_puyuh_air_service\Service1.wsdl" />
+    <None Include="Connected Services\maskapai_puyuh_air_service\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\maskapai_puyuh_air_service\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\maskapai_puyuh_air_service\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\maskapai_puyuh_air_service\Travelancar.maskapai_puyuh_air_service.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\maskapai_puyuh_air_service\Travelancar.maskapai_puyuh_air_service.getPenerbanganResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\maskapai_puyuh_air_service\Travelancar.maskapai_puyuh_air_service.penerbangan.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\maskapai_puyuh_air_service\Travelancar.maskapai_puyuh_air_service.Pesawat.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\maskapai_puyuh_air_service\Travelancar.maskapai_puyuh_air_service.tiket.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -187,6 +296,14 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\hotel_kasur_empuk_service\" />
+    <WCFMetadataStorage Include="Connected Services\hotel_mawar_melati_service\" />
+    <WCFMetadataStorage Include="Connected Services\maskapai_puyuh_air_service\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

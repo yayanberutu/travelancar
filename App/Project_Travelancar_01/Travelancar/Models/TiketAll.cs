@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Travelancar.Models
 {
-    public class tiket_univ
+    public class TiketAll
     {
         public int id_tiket { get; set; }
         public int id_penerbangan { get; set; }
