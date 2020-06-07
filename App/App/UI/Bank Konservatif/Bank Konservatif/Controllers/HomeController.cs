@@ -10,6 +10,7 @@ namespace Bank_Konservatif.Controllers
     {
         public ActionResult Index()
         {
+
             return View();
         }
 

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BankKonservatifModelStoreContainer" CdmEntityContainer="BankKonservatifEntities">
+    <EntitySetMapping Name="nasabahs">
+      <EntityTypeMapping TypeName="BankKonservatifModel.nasabah">
+        <MappingFragment StoreEntitySet="nasabah">
+          <ScalarProperty Name="no_rekening" ColumnName="no_rekening" />
+          <ScalarProperty Name="nama" ColumnName="nama" />
+          <ScalarProperty Name="alamat" ColumnName="alamat" />
+          <ScalarProperty Name="no_ktp" ColumnName="no_ktp" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="saldo" ColumnName="saldo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

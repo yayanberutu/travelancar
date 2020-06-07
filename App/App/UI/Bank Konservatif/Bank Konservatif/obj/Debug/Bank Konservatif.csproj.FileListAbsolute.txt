@@ -77,3 +77,7 @@ C:\xampp\htdocs\TEKNET\travelancar\App\App\UI\Bank Konservatif\Bank Konservatif\
 C:\xampp\htdocs\TEKNET\travelancar\App\App\UI\Bank Konservatif\Bank Konservatif\obj\Debug\Bank Konservatif.csproj.CopyComplete
 C:\xampp\htdocs\TEKNET\travelancar\App\App\UI\Bank Konservatif\Bank Konservatif\obj\Debug\Bank Konservatif.dll
 C:\xampp\htdocs\TEKNET\travelancar\App\App\UI\Bank Konservatif\Bank Konservatif\obj\Debug\Bank Konservatif.pdb
+C:\xampp\htdocs\TEKNET\travelancar\App\App\UI\Bank Konservatif\Bank Konservatif\bin\EntityFramework.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\App\UI\Bank Konservatif\Bank Konservatif\bin\EntityFramework.SqlServer.dll
+C:\xampp\htdocs\TEKNET\travelancar\App\App\UI\Bank Konservatif\Bank Konservatif\bin\EntityFramework.xml
+C:\xampp\htdocs\TEKNET\travelancar\App\App\UI\Bank Konservatif\Bank Konservatif\bin\EntityFramework.SqlServer.xml
