@@ -184,6 +184,9 @@ namespace Travelancar.maskapai_puyuh_air_service {
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.DateTime tanggal_keberangkatanField;
         
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Travelancar.maskapai_puyuh_air_service.tiket[] tiketField;
+        
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -281,6 +284,224 @@ namespace Travelancar.maskapai_puyuh_air_service {
                 if ((this.tanggal_keberangkatanField.Equals(value) != true)) {
                     this.tanggal_keberangkatanField = value;
                     this.RaisePropertyChanged("tanggal_keberangkatan");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Travelancar.maskapai_puyuh_air_service.tiket[] tiket {
+            get {
+                return this.tiketField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tiketField, value) != true)) {
+                    this.tiketField = value;
+                    this.RaisePropertyChanged("tiket");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="tiket", Namespace="http://schemas.datacontract.org/2004/07/PuyuhAir")]
+    [System.SerializableAttribute()]
+    public partial class tiket : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string STATUSField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> batas_waktu_bayar_atmField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> batas_waktu_bayar_internet_bankingField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int id_penerbanganField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int id_tiketField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string kode_bayarField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string kode_bookingField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Travelancar.maskapai_puyuh_air_service.penerbangan penerbanganField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<long> total_hargaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> user_idField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> waktu_bookingField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string STATUS {
+            get {
+                return this.STATUSField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.STATUSField, value) != true)) {
+                    this.STATUSField = value;
+                    this.RaisePropertyChanged("STATUS");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> batas_waktu_bayar_atm {
+            get {
+                return this.batas_waktu_bayar_atmField;
+            }
+            set {
+                if ((this.batas_waktu_bayar_atmField.Equals(value) != true)) {
+                    this.batas_waktu_bayar_atmField = value;
+                    this.RaisePropertyChanged("batas_waktu_bayar_atm");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> batas_waktu_bayar_internet_banking {
+            get {
+                return this.batas_waktu_bayar_internet_bankingField;
+            }
+            set {
+                if ((this.batas_waktu_bayar_internet_bankingField.Equals(value) != true)) {
+                    this.batas_waktu_bayar_internet_bankingField = value;
+                    this.RaisePropertyChanged("batas_waktu_bayar_internet_banking");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int id_penerbangan {
+            get {
+                return this.id_penerbanganField;
+            }
+            set {
+                if ((this.id_penerbanganField.Equals(value) != true)) {
+                    this.id_penerbanganField = value;
+                    this.RaisePropertyChanged("id_penerbangan");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int id_tiket {
+            get {
+                return this.id_tiketField;
+            }
+            set {
+                if ((this.id_tiketField.Equals(value) != true)) {
+                    this.id_tiketField = value;
+                    this.RaisePropertyChanged("id_tiket");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string kode_bayar {
+            get {
+                return this.kode_bayarField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kode_bayarField, value) != true)) {
+                    this.kode_bayarField = value;
+                    this.RaisePropertyChanged("kode_bayar");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string kode_booking {
+            get {
+                return this.kode_bookingField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kode_bookingField, value) != true)) {
+                    this.kode_bookingField = value;
+                    this.RaisePropertyChanged("kode_booking");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Travelancar.maskapai_puyuh_air_service.penerbangan penerbangan {
+            get {
+                return this.penerbanganField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.penerbanganField, value) != true)) {
+                    this.penerbanganField = value;
+                    this.RaisePropertyChanged("penerbangan");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<long> total_harga {
+            get {
+                return this.total_hargaField;
+            }
+            set {
+                if ((this.total_hargaField.Equals(value) != true)) {
+                    this.total_hargaField = value;
+                    this.RaisePropertyChanged("total_harga");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> user_id {
+            get {
+                return this.user_idField;
+            }
+            set {
+                if ((this.user_idField.Equals(value) != true)) {
+                    this.user_idField = value;
+                    this.RaisePropertyChanged("user_id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> waktu_booking {
+            get {
+                return this.waktu_bookingField;
+            }
+            set {
+                if ((this.waktu_bookingField.Equals(value) != true)) {
+                    this.waktu_bookingField = value;
+                    this.RaisePropertyChanged("waktu_booking");
                 }
             }
         }
@@ -451,195 +672,6 @@ namespace Travelancar.maskapai_puyuh_air_service {
                 if ((object.ReferenceEquals(this.tiket_sahField, value) != true)) {
                     this.tiket_sahField = value;
                     this.RaisePropertyChanged("tiket_sah");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="tiket", Namespace="http://schemas.datacontract.org/2004/07/PuyuhAir")]
-    [System.SerializableAttribute()]
-    public partial class tiket : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string STATUSField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> batas_waktu_bayar_atmField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> batas_waktu_bayar_internet_bankingField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int id_penerbanganField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int id_tiketField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string kode_bayarField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string kode_bookingField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<long> total_hargaField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> user_idField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> waktu_bookingField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string STATUS {
-            get {
-                return this.STATUSField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.STATUSField, value) != true)) {
-                    this.STATUSField = value;
-                    this.RaisePropertyChanged("STATUS");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<System.DateTime> batas_waktu_bayar_atm {
-            get {
-                return this.batas_waktu_bayar_atmField;
-            }
-            set {
-                if ((this.batas_waktu_bayar_atmField.Equals(value) != true)) {
-                    this.batas_waktu_bayar_atmField = value;
-                    this.RaisePropertyChanged("batas_waktu_bayar_atm");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<System.DateTime> batas_waktu_bayar_internet_banking {
-            get {
-                return this.batas_waktu_bayar_internet_bankingField;
-            }
-            set {
-                if ((this.batas_waktu_bayar_internet_bankingField.Equals(value) != true)) {
-                    this.batas_waktu_bayar_internet_bankingField = value;
-                    this.RaisePropertyChanged("batas_waktu_bayar_internet_banking");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int id_penerbangan {
-            get {
-                return this.id_penerbanganField;
-            }
-            set {
-                if ((this.id_penerbanganField.Equals(value) != true)) {
-                    this.id_penerbanganField = value;
-                    this.RaisePropertyChanged("id_penerbangan");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int id_tiket {
-            get {
-                return this.id_tiketField;
-            }
-            set {
-                if ((this.id_tiketField.Equals(value) != true)) {
-                    this.id_tiketField = value;
-                    this.RaisePropertyChanged("id_tiket");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string kode_bayar {
-            get {
-                return this.kode_bayarField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.kode_bayarField, value) != true)) {
-                    this.kode_bayarField = value;
-                    this.RaisePropertyChanged("kode_bayar");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string kode_booking {
-            get {
-                return this.kode_bookingField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.kode_bookingField, value) != true)) {
-                    this.kode_bookingField = value;
-                    this.RaisePropertyChanged("kode_booking");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<long> total_harga {
-            get {
-                return this.total_hargaField;
-            }
-            set {
-                if ((this.total_hargaField.Equals(value) != true)) {
-                    this.total_hargaField = value;
-                    this.RaisePropertyChanged("total_harga");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> user_id {
-            get {
-                return this.user_idField;
-            }
-            set {
-                if ((this.user_idField.Equals(value) != true)) {
-                    this.user_idField = value;
-                    this.RaisePropertyChanged("user_id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<System.DateTime> waktu_booking {
-            get {
-                return this.waktu_bookingField;
-            }
-            set {
-                if ((this.waktu_bookingField.Equals(value) != true)) {
-                    this.waktu_bookingField = value;
-                    this.RaisePropertyChanged("waktu_booking");
                 }
             }
         }

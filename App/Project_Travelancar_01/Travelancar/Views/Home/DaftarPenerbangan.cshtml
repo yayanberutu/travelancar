@@ -1,36 +1,35 @@
-﻿@model IEnumerable<Travelancar.Models.DaftarPenerbangan>
-
+﻿@model IEnumerable<Travelancar.Models.PenerbanganAll>
 @{
     ViewBag.Title = "DaftarPenerbangan";
 }
 
-<br /><p><b>Pesan Penerbangan</b></p>
+<h2>DaftarPenerbangan</h2>
+<table class="table">
+    <tr>
+        <td>Nama Maskapai</td>
+        <td>Kota Asal</td>
+        <td>Kota Tujuan</td>
+        <td>Tanggal Penerbangan</td>
+        <td>Jam Keberangkatan</td>
+        <td>Harga Total</td>
+        <td></td>
+    </tr>
 
-@using (Html.BeginForm())
-{
-    <table class="table">
-        <tbody>
+    @foreach (var item in Model)
+    {
+        if (item.id_penerbangan != 0 && item.kota_asal != "NULL")
+        {
             <tr>
-                <td>Nama Maskapai</td>
-                <td>Kota Asal</td>
-                <td>Kota Tujuan</td>
-                <td>Tanggal Penerbangan</td>
-                <td>Jam Keberangkatan</td>
-                <td>Harga Total</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Garuda(dummy)</td>
-                <td>Medan (dummy)</td>
-                <td>Papua (dummy)</td>
-                <td>09-12-2009 (dummy)</td>
-                <td>12.15(dummy)</td>
-                <td>900.000 (dummy)</td>
+                <td>@Html.DisplayFor(modelItem => item.nama_maskapai)</td>
+                <td>@Html.DisplayFor(modelItem => item.kota_asal)</td>
+                <td>@Html.DisplayFor(modelItem => item.kota_tujuan)</td>
+                <td>@Html.DisplayFor(modelItem => item.tanggal_keberangkatan)</td>
+                <td>@Html.DisplayFor(modelItem => item.jam_keberangkatan)</td>
+                <td>@Html.DisplayFor(modelItem => item.harga)</td>
                 <td><input type="submit" value="Pesan" class="btn btn-primary" /></td>
             </tr>
-        </tbody>
-    </table>
-}
+        }
+    }
 
-
+</table>
 
