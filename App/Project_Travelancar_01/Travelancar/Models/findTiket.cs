@@ -8,7 +8,6 @@ namespace Travelancar.Models
 {
     public class findTiket
     {
-        
             [Required]
             public string kotaAsal { get; set; }
             [Required]
@@ -17,6 +16,6 @@ namespace Travelancar.Models
             public DateTime tanggalBerangkat { get; set; }
             [Required]
             public int jumlahPenumpang { get; set; }
-        
     }
+    
 }

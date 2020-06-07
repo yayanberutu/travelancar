@@ -14,6 +14,5 @@ namespace Travelancar.Models
         public System.DateTime tanggal_keberangkatan { get; set; }
         public string jam_keberangkatan { get; set; }
         public int harga { get; set; }
-
     }
 }

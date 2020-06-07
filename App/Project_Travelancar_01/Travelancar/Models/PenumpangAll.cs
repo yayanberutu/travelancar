@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -9,11 +7,10 @@ namespace Travelancar.Models
 {
     public class PenumpangAll
     {
-        public int idPenerbangan { get; set; }
-        public string namaMaskapai{ get; set; }
-        [Required]
+
+        public int id_penerbangan { get; set; }
+        public string nama_maskapai { get; set; }
         public string nama { get; set; }
-        [Required]
         public string nomor_identitas { get; set; }
     }
 }

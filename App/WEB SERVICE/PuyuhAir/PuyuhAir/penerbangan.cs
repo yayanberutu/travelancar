@@ -14,6 +14,12 @@ namespace PuyuhAir
     
     public partial class penerbangan
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public penerbangan()
+        {
+            this.tiket = new HashSet<tiket>();
+        }
+    
         public int id_penerbangan { get; set; }
         public string nama_maskapai { get; set; }
         public string kota_asal { get; set; }
@@ -21,5 +27,8 @@ namespace PuyuhAir
         public System.DateTime tanggal_keberangkatan { get; set; }
         public string jam_keberangkatan { get; set; }
         public int harga { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tiket> tiket { get; set; }
     }
 }

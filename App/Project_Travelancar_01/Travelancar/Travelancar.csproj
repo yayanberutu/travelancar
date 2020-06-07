@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -8,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{25A0E911-29DD-439E-B2F1-8DE81D56549B}</ProjectGuid>
+    <ProjectGuid>{4EB6E6D4-ECA5-4361-BF60-008FA9980CBB}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -18,7 +19,7 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44302</IISExpressSSLPort>
+    <IISExpressSSLPort>44349</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -45,6 +46,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -112,6 +119,12 @@
       <Private>True</Private>
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="WebMatrix.Data, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.3.2.7\lib\net45\WebMatrix.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.3.2.7\lib\net45\WebMatrix.WebData.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -122,12 +135,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Connected Services\hotel_kasur_empuk_service\Reference.cs">
+    <Compile Include="Connected Services\ItikAirService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Connected Services\hotel_mawar_melati_service\Reference.cs">
+    <Compile Include="Connected Services\maskapai_piguin_air_service\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -137,60 +150,47 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Filters\MembershipTL.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\BookingKamar.cs" />
-    <Compile Include="Models\DaftarPenerbangan.cs" />
+    <Compile Include="Models\AccountModel.cs" />
     <Compile Include="Models\findTiket.cs" />
-    <Compile Include="Models\KamarAll.cs" />
-    <Compile Include="Models\PemesananAll.cs" />
-    <Compile Include="Models\penerbanganbaru.cs" />
-    <Compile Include="Models\penerbangan.cs" />
     <Compile Include="Models\PenerbanganAll.cs" />
     <Compile Include="Models\PenumpangAll.cs" />
-    <Compile Include="Models\perbandinganhotel.cs" />
     <Compile Include="Models\TiketAll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\hotel_kasur_empuk_service\Service1.wsdl" />
-    <None Include="Connected Services\hotel_kasur_empuk_service\Service1.xsd">
+    <None Include="Connected Services\ItikAirService\Service1.disco" />
+    <None Include="Connected Services\ItikAirService\configuration91.svcinfo" />
+    <None Include="Connected Services\ItikAirService\configuration.svcinfo" />
+    <None Include="Connected Services\ItikAirService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\maskapai_piguin_air_service\Service1.wsdl" />
+    <None Include="Connected Services\maskapai_piguin_air_service\Service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\hotel_kasur_empuk_service\Service11.xsd">
+    <None Include="Connected Services\maskapai_piguin_air_service\Service11.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\hotel_kasur_empuk_service\Service12.xsd">
+    <None Include="Connected Services\maskapai_piguin_air_service\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Connected Services\hotel_kasur_empuk_service\Travelancar.hotel_kasur_empuk_service.CompositeType.datasource">
+    <Content Include="Connected Services\maskapai_piguin_air_service\Travelancar.maskapai_piguin_air_service.CompositeType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\hotel_kasur_empuk_service\Travelancar.hotel_kasur_empuk_service.kamar.datasource">
+    <Content Include="Connected Services\maskapai_piguin_air_service\Travelancar.maskapai_piguin_air_service.Penerbangan.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\hotel_kasur_empuk_service\Travelancar.hotel_kasur_empuk_service.pemesanan.datasource">
+    <Content Include="Connected Services\maskapai_piguin_air_service\Travelancar.maskapai_piguin_air_service.penerbangan1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <None Include="Connected Services\hotel_mawar_melati_service\Service1.wsdl" />
-    <None Include="Connected Services\hotel_mawar_melati_service\Service1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\hotel_mawar_melati_service\Service11.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\hotel_mawar_melati_service\Service12.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="Connected Services\hotel_mawar_melati_service\Travelancar.hotel_mawar_melati_service.CompositeType.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\hotel_mawar_melati_service\Travelancar.hotel_mawar_melati_service.kamar.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\hotel_mawar_melati_service\Travelancar.hotel_mawar_melati_service.pemesanan.datasource">
+    <Content Include="Connected Services\maskapai_piguin_air_service\Travelancar.maskapai_piguin_air_service.tiket.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\maskapai_puyuh_air_service\Service1.disco" />
@@ -200,17 +200,10 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Connected Services\hotel_kasur_empuk_service\Service1.disco" />
-    <None Include="Connected Services\hotel_kasur_empuk_service\configuration91.svcinfo" />
-    <None Include="Connected Services\hotel_kasur_empuk_service\configuration.svcinfo" />
-    <None Include="Connected Services\hotel_kasur_empuk_service\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Connected Services\hotel_mawar_melati_service\Service1.disco" />
-    <None Include="Connected Services\hotel_mawar_melati_service\configuration91.svcinfo" />
-    <None Include="Connected Services\hotel_mawar_melati_service\configuration.svcinfo" />
-    <None Include="Connected Services\hotel_mawar_melati_service\Reference.svcmap">
+    <None Include="Connected Services\maskapai_piguin_air_service\Service1.disco" />
+    <None Include="Connected Services\maskapai_piguin_air_service\configuration91.svcinfo" />
+    <None Include="Connected Services\maskapai_piguin_air_service\configuration.svcinfo" />
+    <None Include="Connected Services\maskapai_piguin_air_service\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -224,6 +217,25 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Connected Services\ItikAirService\Service1.wsdl" />
+    <None Include="Connected Services\ItikAirService\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ItikAirService\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ItikAirService\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\ItikAirService\Travelancar.ItikAirService.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ItikAirService\Travelancar.ItikAirService.penerbangan.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ItikAirService\Travelancar.ItikAirService.tiket.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\maskapai_puyuh_air_service\Service1.wsdl" />
     <None Include="Connected Services\maskapai_puyuh_air_service\Service1.xsd">
       <SubType>Designer</SubType>
@@ -274,11 +286,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Pembayaran.cshtml" />
-    <Content Include="Views\Home\BookFlight.cshtml" />
-    <Content Include="Views\Home\Pesan.cshtml" />
-    <Content Include="Views\Home\pemesanan_kamar.cshtml" />
-    <Content Include="Views\Home\penerbangan.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Home\ListPenerbangan.cshtml" />
     <Content Include="Views\Home\DaftarPenerbangan.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -301,8 +312,8 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\hotel_kasur_empuk_service\" />
-    <WCFMetadataStorage Include="Connected Services\hotel_mawar_melati_service\" />
+    <WCFMetadataStorage Include="Connected Services\ItikAirService\" />
+    <WCFMetadataStorage Include="Connected Services\maskapai_piguin_air_service\" />
     <WCFMetadataStorage Include="Connected Services\maskapai_puyuh_air_service\" />
   </ItemGroup>
   <PropertyGroup>
@@ -321,9 +332,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>53371</DevelopmentServerPort>
+          <DevelopmentServerPort>52779</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44302/</IISUrl>
+          <IISUrl>https://localhost:44349/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -338,7 +349,10 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
   </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

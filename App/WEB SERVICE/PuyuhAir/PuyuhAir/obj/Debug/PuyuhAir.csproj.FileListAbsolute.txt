@@ -1,22 +1,11 @@
-D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAir\bin\Debug\PuyuhAir.dll.config
-D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAir\bin\Debug\PuyuhAir.dll
-D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAir\bin\Debug\PuyuhAir.pdb
-D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAir\bin\Debug\EntityFramework.dll
-D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAir\bin\Debug\EntityFramework.SqlServer.dll
-D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAir\bin\Debug\EntityFramework.xml
-D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAir\bin\Debug\EntityFramework.SqlServer.xml
-D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAir\obj\Debug\PuyuhAir.csprojAssemblyReference.cache
-D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAir\obj\Debug\PuyuhAir.csproj.CopyComplete
-D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAir\obj\Debug\PuyuhAir.dll
-D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\WEB SERVICE\PuyuhAir\obj\Debug\PuyuhAir.pdb
-C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\bin\Debug\PuyuhAir.dll.config
-C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\bin\Debug\PuyuhAir.dll
-C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\bin\Debug\PuyuhAir.pdb
-C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\bin\Debug\EntityFramework.dll
-C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\bin\Debug\EntityFramework.SqlServer.dll
-C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\bin\Debug\EntityFramework.xml
-C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\bin\Debug\EntityFramework.SqlServer.xml
-C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\obj\Debug\PuyuhAir.csprojAssemblyReference.cache
-C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\obj\Debug\PuyuhAir.csproj.CopyComplete
-C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\obj\Debug\PuyuhAir.dll
-C:\xampp\htdocs\BankBung\App\WEB SERVICE\PuyuhAir\PuyuhAir\obj\Debug\PuyuhAir.pdb
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\Versi 2\PuyuhAir\PuyuhAir\bin\PuyuhAir.dll.config
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\Versi 2\PuyuhAir\PuyuhAir\bin\PuyuhAir.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\Versi 2\PuyuhAir\PuyuhAir\bin\PuyuhAir.pdb
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\Versi 2\PuyuhAir\PuyuhAir\bin\EntityFramework.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\Versi 2\PuyuhAir\PuyuhAir\bin\EntityFramework.SqlServer.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\Versi 2\PuyuhAir\PuyuhAir\bin\EntityFramework.xml
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\Versi 2\PuyuhAir\PuyuhAir\bin\EntityFramework.SqlServer.xml
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\Versi 2\PuyuhAir\PuyuhAir\obj\Debug\PuyuhAir.csprojAssemblyReference.cache
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\Versi 2\PuyuhAir\PuyuhAir\obj\Debug\PuyuhAir.csproj.CopyComplete
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\Versi 2\PuyuhAir\PuyuhAir\obj\Debug\PuyuhAir.dll
+D:\PERKULIAHAN\SEMESTER4\TEKNET\WEB SERVICE\Versi 2\PuyuhAir\PuyuhAir\obj\Debug\PuyuhAir.pdb

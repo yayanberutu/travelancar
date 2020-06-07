@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:62737/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:62737/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:62737/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PinguinAir" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetPinguinAir_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPinguinAir" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPinguinAir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPinguinAirResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertPenerbangan_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPenerbangan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertPenerbangan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPenerbanganResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdatePenerbangan_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePenerbangan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdatePenerbangan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePenerbanganResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeletePenerbangan_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePenerbangan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeletePenerbangan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePenerbanganResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getPenerbangan_InputMessage">
+    <wsdl:part name="parameters" element="tns:getPenerbangan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getPenerbangan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getPenerbanganResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_bayar_InputMessage">
+    <wsdl:part name="parameters" element="tns:bayar" />
+  </wsdl:message>
+  <wsdl:message name="IService1_bayar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:bayarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_booking_InputMessage">
+    <wsdl:part name="parameters" element="tns:booking" />
+  </wsdl:message>
+  <wsdl:message name="IService1_booking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:bookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getTiket_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTiket" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getTiket_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTiketResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getPemesanan_InputMessage">
+    <wsdl:part name="parameters" element="tns:getPemesanan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getPemesanan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getPemesananResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetPinguinAir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetPinguinAir" message="tns:IService1_GetPinguinAir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetPinguinAirResponse" message="tns:IService1_GetPinguinAir_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPenerbangan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsertPenerbangan" message="tns:IService1_InsertPenerbangan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsertPenerbanganResponse" message="tns:IService1_InsertPenerbangan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePenerbangan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdatePenerbangan" message="tns:IService1_UpdatePenerbangan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdatePenerbanganResponse" message="tns:IService1_UpdatePenerbangan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePenerbangan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeletePenerbangan" message="tns:IService1_DeletePenerbangan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeletePenerbanganResponse" message="tns:IService1_DeletePenerbangan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPenerbangan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getPenerbangan" message="tns:IService1_getPenerbangan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getPenerbanganResponse" message="tns:IService1_getPenerbangan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="bayar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/bayar" message="tns:IService1_bayar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/bayarResponse" message="tns:IService1_bayar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="booking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/booking" message="tns:IService1_booking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/bookingResponse" message="tns:IService1_booking_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTiket">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getTiket" message="tns:IService1_getTiket_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getTiketResponse" message="tns:IService1_getTiket_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPemesanan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getPemesanan" message="tns:IService1_getPemesanan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getPemesananResponse" message="tns:IService1_getPemesanan_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPinguinAir">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetPinguinAir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPenerbangan">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsertPenerbangan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePenerbangan">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdatePenerbangan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePenerbangan">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeletePenerbangan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPenerbangan">
+      <soap:operation soapAction="http://tempuri.org/IService1/getPenerbangan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bayar">
+      <soap:operation soapAction="http://tempuri.org/IService1/bayar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="booking">
+      <soap:operation soapAction="http://tempuri.org/IService1/booking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTiket">
+      <soap:operation soapAction="http://tempuri.org/IService1/getTiket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPemesanan">
+      <soap:operation soapAction="http://tempuri.org/IService1/getPemesanan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:62737/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

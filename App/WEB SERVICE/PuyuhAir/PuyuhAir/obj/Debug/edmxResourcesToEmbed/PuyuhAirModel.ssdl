@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="puyuh_airModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="penerbangan">
+    <Key>
+      <PropertyRef Name="id_penerbangan" />
+    </Key>
+    <Property Name="id_penerbangan" Type="int" Nullable="false" />
+    <Property Name="nama_maskapai" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="kota_asal" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="kota_tujuan" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="tanggal_keberangkatan" Type="datetime" Nullable="false" />
+    <Property Name="jam_keberangkatan" Type="nvarchar" MaxLength="16" Nullable="false" />
+    <Property Name="harga" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="penumpang">
+    <Key>
+      <PropertyRef Name="id_penumpang" />
+    </Key>
+    <Property Name="id_penumpang" Type="int" Nullable="false" />
+    <Property Name="id_tiket" Type="int" Nullable="false" />
+    <Property Name="nama" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="nomor_identitas" Type="nvarchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pesawats">
+    <Key>
+      <PropertyRef Name="id_penerbangan" />
+    </Key>
+    <Property Name="id_penerbangan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nama_maskapai" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="kota_asal" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="kota_tujuan" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="tanggal_keberangkatan" Type="datetime" Nullable="false" />
+    <Property Name="jam_keberangkatan" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="harga" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tiket">
+    <Key>
+      <PropertyRef Name="id_tiket" />
+    </Key>
+    <Property Name="id_tiket" Type="int" Nullable="false" />
+    <Property Name="id_penerbangan" Type="int" Nullable="false" />
+    <Property Name="kode_booking" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="waktu_booking" Type="datetime" />
+    <Property Name="batas_waktu_bayar_atm" Type="datetime" />
+    <Property Name="batas_waktu_bayar_internet_banking" Type="datetime" />
+    <Property Name="kode_bayar" Type="nvarchar" MaxLength="250" />
+    <Property Name="STATUS" Type="nvarchar" MaxLength="50" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="total_harga" Type="bigint" />
+  </EntityType>
+  <EntityContainer Name="puyuh_airModelStoreContainer">
+    <EntitySet Name="penerbangan" EntityType="Self.penerbangan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="penumpang" EntityType="Self.penumpang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pesawats" EntityType="Self.Pesawats" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tiket" EntityType="Self.tiket" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
