@@ -1,5 +1,18 @@
+--
+-- Database: `itik_air`
+--
+
+-- --------------------------------------------------------
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `penerbangan`
+--
+
 create database itik_air
 
+use itik_air
 
 CREATE TABLE penerbangan (
   id_penerbangan INT PRIMARY KEY NOT NULL
@@ -10,6 +23,7 @@ CREATE TABLE penerbangan (
 , jam_keberangkatan NVARCHAR(16) NOT NULL
 , harga INT NOT NULL
 );
+
 
 CREATE TABLE tiket (
   id_tiket INT PRIMARY KEY NOT NULL
@@ -30,3 +44,18 @@ CREATE TABLE penumpang (
 , nama NVARCHAR(250) NOT NULL
 , nomor_identitas NVARCHAR(250) NOT NULL
 );
+--
+-- Constraints for table `tiket`
+--
+
+ALTER TABLE tiket
+  ADD CONSTRAINT FK_No_Penerbangan FOREIGN KEY (id_penerbangan) REFERENCES penerbangan (id_penerbangan);
+
+
+insert into penerbangan values (1 ,'Garuda', 2000000, 'Medan', 'Jakarta', '2020-12-12', '2020-12-12', '20:00','22:00')
+insert into penerbangan values (1 ,'Garuda', 2000000, 'Medan', 'Jakarta', '2020-12-12', '2020-12-12', '20:00','22:00')
+
+select * from penerbangan
+
+ use itik_air
+

@@ -32,3 +32,8 @@ CREATE TABLE penumpang (
 
 ALTER TABLE tiket
   ADD CONSTRAINT FK_id_Penerbangan FOREIGN KEY (id_penerbangan) REFERENCES penerbangan (id_penerbangan);
+
+
+
+insert into penerbangan values (1 ,'Garuda', 2000000, 'Medan', 'Jakarta', '2020-12-12', '2020-12-12', '20:00','22:00')
+insert into penerbangan values (1 ,'Garuda', 2000000, 'Medan', 'Jakarta', '2020-12-12', '2020-12-12', '20:00','22:00')
